@@ -1,0 +1,2 @@
+C:\Users\krisk\Unreal_Projects\PlayervsAI\Intermediate\Build\Win64\UE4Editor\Development\PlayervsAI\Definitions.PlayervsAI.h
+C:\Users\krisk\Unreal_Projects\PlayervsAI\Source\PlayervsAI\PlayervsAI.h
