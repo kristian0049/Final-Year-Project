@@ -68,4 +68,6 @@ public:
 	AGunProperties *CurrentWeapon;
 
 	bool bIsFiring = false;
+
+	FTimerHandle TimerHandle_HandleRefire;
 };

@@ -14,19 +14,19 @@ AGunProperties::AGunProperties()
 }
 
 
-void AGunProperties::Fire()
+void AGunProperties::Fire(FVector GetFwrCam)
 {
 	if (ProjectileType == EWeaponProjectile::EBullet)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, TEXT("Bullet"));
-		InstantFire();
+		InstantFire(GetFwrCam);
 	}
 	if (ProjectileType == EWeaponProjectile::ESpread)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, TEXT("Spread"));
 		for (int32 i = 0; i <= WeaponConfig.WeaponSpread; i++)
 		{
-			InstantFire();
+			InstantFire(GetFwrCam);
 		}
 	}
 	if (ProjectileType == EWeaponProjectile::EProjectile)
@@ -35,16 +35,16 @@ void AGunProperties::Fire()
 	}
 }
 
-void AGunProperties::InstantFire()
+void AGunProperties::InstantFire(FVector GetFwrCam)
 {
 	const int32 RandomSeed = FMath::Rand();
 	FRandomStream WeaponRandomStream(RandomSeed);
 	const float CurrentSpread = WeaponConfig.WeaponSpread;
-	const float SpreadCone = FMath::DegreesToRadians(WeaponConfig.WeaponSpread * 0.5);
+	const float SpreadCone = FMath::DegreesToRadians(WeaponConfig.WeaponSpread *0.5 );
 	const FVector AimDir = WeaponMesh->GetSocketRotation("MF").Vector();
 	const FVector StartTrace = WeaponMesh->GetSocketLocation("MF");
-	const FVector ShootDir = WeaponRandomStream.VRandCone(AimDir, SpreadCone, SpreadCone);
-	const FVector EndTrace = StartTrace + ShootDir * WeaponConfig.WeaponRange;
+	const FVector ShootDir = WeaponRandomStream.VRandCone(StartTrace, SpreadCone, SpreadCone);
+	const FVector EndTrace = StartTrace + ShootDir + GetFwrCam  * WeaponConfig.WeaponRange;
 	const FHitResult Impact = WeaponTrace(StartTrace, EndTrace);
 
 	ProcessInstantHit(Impact, StartTrace, ShootDir, RandomSeed, CurrentSpread);

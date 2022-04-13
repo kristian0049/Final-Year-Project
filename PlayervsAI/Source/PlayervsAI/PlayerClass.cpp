@@ -37,16 +37,6 @@ APlayerClass::APlayerClass()
 	HandsMesh->AddRelativeRotation(FRotator(1.9f, -19.9f, 5.2f));
 	HandsMesh->AddRelativeLocation(FVector(-0.5f, -4.4f, -155.7f));
 
-	GunMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
-	GunMesh->SetOnlyOwnerSee(true);
-	GunMesh->bCastDynamicShadow = false;
-	GunMesh->CastShadow = false;
-
-	
-	
-	
-	
-
 	MuzzleLocation = CreateDefaultSubobject<USceneComponent>(TEXT("Muzzle Location"));
 	MuzzleLocation->SetupAttachment(GunMesh);
 	MuzzleLocation->SetRelativeLocation(FVector(0.2f, 48.4f, -10.6f));
@@ -73,17 +63,19 @@ void APlayerClass::BeginPlay()
 
 void APlayerClass::Fire()
 {
-	CurrentWeapon->Fire();
+	CurrentWeapon->Fire(FirstPersonCamera->GetForwardVector());
 }
 
 void APlayerClass::StartFire()
 {
 	bIsFiring = true;
+	GetWorldTimerManager().SetTimer(TimerHandle_HandleRefire, this, &APlayerClass::Fire, CurrentWeapon->WeaponConfig.TimeBetweenShots, true);
 }
 
 void APlayerClass::StopFire()
 {
 	bIsFiring = false;
+	GetWorldTimerManager().ClearTimer(TimerHandle_HandleRefire);
 }
 
 void APlayerClass::MoveForward(float Value)
@@ -138,6 +130,8 @@ void APlayerClass::Tick(float DeltaTime)
 	{
 		Fire();
 	}
+		
+	
 }
 
 // Called to bind functionality to input
@@ -147,7 +141,7 @@ void APlayerClass::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerClass::StartFire);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerClass::Fire);
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &APlayerClass::StopFire);
 
 	PlayerInputComponent->BindAxis("MoveForward",  this, &APlayerClass::MoveForward);

@@ -52,10 +52,10 @@ public:
 	AGunProperties();
 	// Called every frame
 	UFUNCTION()
-	void Fire();
+	void Fire(FVector GetFwrCam);
 	
 	UFUNCTION()
-	void InstantFire();
+	void InstantFire(FVector GetFwrCam);
 
 	UPROPERTY(EditDefaultsOnly, Category = Config)
 	FWeaponData WeaponConfig;

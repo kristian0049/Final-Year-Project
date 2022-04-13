@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FVector;
 #ifdef PLAYERVSAI_GunProperties_generated_h
 #error "GunProperties.generated.h already included, missing '#pragma once' in GunProperties.h"
 #endif

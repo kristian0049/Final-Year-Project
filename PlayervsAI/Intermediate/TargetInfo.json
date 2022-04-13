@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "PlayervsAI",
-			"Path": "C:\\Users\\krisk\\Unreal_Projects\\PlayervsAI\\Source\\PlayervsAI.Target.cs",
+			"Path": "C:\\Users\\krisk\\Unreal_Projects\\Final-Year-Project\\PlayervsAI\\Source\\PlayervsAI.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "PlayervsAIEditor",
-			"Path": "C:\\Users\\krisk\\Unreal_Projects\\PlayervsAI\\Source\\PlayervsAIEditor.Target.cs",
+			"Path": "C:\\Users\\krisk\\Unreal_Projects\\Final-Year-Project\\PlayervsAI\\Source\\PlayervsAIEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

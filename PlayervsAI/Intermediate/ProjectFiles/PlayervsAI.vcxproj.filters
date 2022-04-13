@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PlayervsAI.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5FE0D35D-12A5-469E-AF64-18F0D148A8C7}</UniqueIdentifier>
+      <UniqueIdentifier>{FE848C0C-E3FC-4D3A-923C-3D6DEF423ACA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PlayervsAI.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0B8C37AD-C495-4F1F-97B2-492041C8B1A1}</UniqueIdentifier>
+      <UniqueIdentifier>{8B988BD6-08A4-4EFD-80D7-50274BFEA020}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PlayervsAI">
-      <UniqueIdentifier>{D5901528-E106-4CAD-8E7E-67EA9AFDD9F0}</UniqueIdentifier>
+      <UniqueIdentifier>{A7512EAB-66DE-4424-892B-2482C84DC904}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PlayervsAI\FirstPersonShooterMode.cpp">
       <Filter>Source\PlayervsAI</Filter>
@@ -63,6 +63,12 @@
       <Filter>Source\PlayervsAI</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PlayervsAI\PlayervsAIHUD.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\PlayerVsAIMode.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\PlayerVsAIMode.h">
       <Filter>Source\PlayervsAI</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PlayervsAI\PlayervsAIProjectile.cpp">
