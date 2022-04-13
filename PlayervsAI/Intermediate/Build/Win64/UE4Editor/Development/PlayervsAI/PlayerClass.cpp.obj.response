@@ -230,8 +230,8 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I C:\Users\krisk\Unreal_Projects\PlayervsAI\Intermediate\Build\Win64\UE4Editor\Inc\PlayervsAI
-/I C:\Users\krisk\Unreal_Projects\PlayervsAI\Source
+/I C:\Users\krisk\Unreal_Projects\Final-Year-Project\PlayervsAI\Intermediate\Build\Win64\UE4Editor\Inc\PlayervsAI
+/I C:\Users\krisk\Unreal_Projects\Final-Year-Project\PlayervsAI\Source
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MRMesh
@@ -265,12 +265,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/FI"C:\Users\krisk\Unreal_Projects\PlayervsAI\Intermediate\Build\Win64\PlayervsAIEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\krisk\Unreal_Projects\PlayervsAI\Intermediate\Build\Win64\PlayervsAIEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\krisk\Unreal_Projects\PlayervsAI\Intermediate\Build\Win64\PlayervsAIEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\krisk\Unreal_Projects\PlayervsAI\Source\PlayervsAI\PlayerClass.cpp"
-/FI"C:\Users\krisk\Unreal_Projects\PlayervsAI\Intermediate\Build\Win64\UE4Editor\Development\PlayervsAI\Definitions.PlayervsAI.h"
-/Fo"C:\Users\krisk\Unreal_Projects\PlayervsAI\Intermediate\Build\Win64\UE4Editor\Development\PlayervsAI\PlayerClass.cpp.obj"
+/FI"C:\Users\krisk\Unreal_Projects\Final-Year-Project\PlayervsAI\Intermediate\Build\Win64\PlayervsAIEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\krisk\Unreal_Projects\Final-Year-Project\PlayervsAI\Intermediate\Build\Win64\PlayervsAIEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\krisk\Unreal_Projects\Final-Year-Project\PlayervsAI\Intermediate\Build\Win64\PlayervsAIEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\krisk\Unreal_Projects\Final-Year-Project\PlayervsAI\Source\PlayervsAI\PlayerClass.cpp"
+/FI"C:\Users\krisk\Unreal_Projects\Final-Year-Project\PlayervsAI\Intermediate\Build\Win64\UE4Editor\Development\PlayervsAI\Definitions.PlayervsAI.h"
+/Fo"C:\Users\krisk\Unreal_Projects\Final-Year-Project\PlayervsAI\Intermediate\Build\Win64\UE4Editor\Development\PlayervsAI\PlayerClass.cpp.obj"
 /TP
 /GR-
 /W4

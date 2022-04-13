@@ -76,6 +76,16 @@ void APlayerClass::Fire()
 	CurrentWeapon->Fire();
 }
 
+void APlayerClass::StartFire()
+{
+	bIsFiring = true;
+}
+
+void APlayerClass::StopFire()
+{
+	bIsFiring = false;
+}
+
 void APlayerClass::MoveForward(float Value)
 {
 	
@@ -124,7 +134,10 @@ void APlayerClass::LookAtRate(float Rate)
 void APlayerClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	if (bIsFiring)
+	{
+		Fire();
+	}
 }
 
 // Called to bind functionality to input
@@ -134,7 +147,8 @@ void APlayerClass::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerClass::Fire);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerClass::StartFire);
+	PlayerInputComponent->BindAction("Fire", IE_Released, this, &APlayerClass::StopFire);
 
 	PlayerInputComponent->BindAxis("MoveForward",  this, &APlayerClass::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight",  this, &APlayerClass::MoveRight);

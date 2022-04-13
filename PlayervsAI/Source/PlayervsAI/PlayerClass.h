@@ -24,6 +24,8 @@ protected:
 	UFUNCTION()
 	void Fire();
 
+	void StartFire();
+	void StopFire();
 	void MoveForward(float Value);
 	void MoveRight(float Value);
 	void MoveBackwards(float Value);
@@ -64,4 +66,6 @@ public:
 		TSubclassOf<class AGunProperties> WeaponSpawn;
 	
 	AGunProperties *CurrentWeapon;
+
+	bool bIsFiring = false;
 };
