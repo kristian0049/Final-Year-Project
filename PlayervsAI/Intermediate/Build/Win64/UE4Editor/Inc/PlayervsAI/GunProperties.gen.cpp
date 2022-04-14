@@ -20,6 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeGunProperties() {}
 	PLAYERVSAI_API UClass* Z_Construct_UClass_AGunProperties();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UBoxComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 // End Cross Module References
@@ -130,6 +132,10 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponSpread_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_WeaponSpread;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MagazineAmmoForAR_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MagazineAmmoForAR;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FStructParams ReturnStructParams;
 	};
@@ -177,12 +183,20 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_WeaponSpread = { "WeaponSpread", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponData, WeaponSpread), METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_WeaponSpread_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_WeaponSpread_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_MagazineAmmoForAR_MetaData[] = {
+		{ "Category", "Config" },
+		{ "ModuleRelativePath", "GunProperties.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_MagazineAmmoForAR = { "MagazineAmmoForAR", nullptr, (EPropertyFlags)0x0010000000010001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FWeaponData, MagazineAmmoForAR), METADATA_PARAMS(Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_MagazineAmmoForAR_MetaData, UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_MagazineAmmoForAR_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FWeaponData_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_MaxAmmo,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_TimeBetweenShots,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_ShotCost,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_WeaponRange,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_WeaponSpread,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FWeaponData_Statics::NewProp_MagazineAmmoForAR,
 	};
 	const UE4CodeGen_Private::FStructParams Z_Construct_UScriptStruct_FWeaponData_Statics::ReturnStructParams = {
 		(UObject* (*)())Z_Construct_UPackage__Script_PlayervsAI,
@@ -212,7 +226,45 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 		}
 		return ReturnStruct;
 	}
-	uint32 Get_Z_Construct_UScriptStruct_FWeaponData_Hash() { return 3651344737U; }
+	uint32 Get_Z_Construct_UScriptStruct_FWeaponData_Hash() { return 967589657U; }
+	DEFINE_FUNCTION(AGunProperties::execProcessARHit)
+	{
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_Impact);
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_Origin);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ProcessARHit(Z_Param_Out_Impact,Z_Param_Out_Origin);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGunProperties::execProcessInstantHit)
+	{
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_Impact);
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_Origin);
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_ShootDir);
+		P_GET_PROPERTY(FIntProperty,Z_Param_RandomSeed);
+		P_GET_PROPERTY(FFloatProperty,Z_Param_RadicalSpread);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ProcessInstantHit(Z_Param_Out_Impact,Z_Param_Out_Origin,Z_Param_Out_ShootDir,Z_Param_RandomSeed,Z_Param_RadicalSpread);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGunProperties::execWeaponTrace)
+	{
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_TraceFrom);
+		P_GET_STRUCT_REF(FVector,Z_Param_Out_TraceTo);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FHitResult*)Z_Param__Result=P_THIS->WeaponTrace(Z_Param_Out_TraceFrom,Z_Param_Out_TraceTo);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AGunProperties::execARShooting)
+	{
+		P_GET_STRUCT(FVector,Z_Param_GetFwrdCam);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ARShooting(Z_Param_GetFwrdCam);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AGunProperties::execInstantFire)
 	{
 		P_GET_STRUCT(FVector,Z_Param_GetFwrCam);
@@ -224,27 +276,69 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 	DEFINE_FUNCTION(AGunProperties::execFire)
 	{
 		P_GET_STRUCT(FVector,Z_Param_GetFwrCam);
+		P_GET_OBJECT(UCameraComponent,Z_Param_PlayerCam);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->Fire(Z_Param_GetFwrCam);
+		P_THIS->Fire(Z_Param_GetFwrCam,Z_Param_PlayerCam);
 		P_NATIVE_END;
 	}
 	void AGunProperties::StaticRegisterNativesAGunProperties()
 	{
 		UClass* Class = AGunProperties::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "ARShooting", &AGunProperties::execARShooting },
 			{ "Fire", &AGunProperties::execFire },
 			{ "InstantFire", &AGunProperties::execInstantFire },
+			{ "ProcessARHit", &AGunProperties::execProcessARHit },
+			{ "ProcessInstantHit", &AGunProperties::execProcessInstantHit },
+			{ "WeaponTrace", &AGunProperties::execWeaponTrace },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AGunProperties_ARShooting_Statics
+	{
+		struct GunProperties_eventARShooting_Parms
+		{
+			FVector GetFwrdCam;
+		};
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_GetFwrdCam;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_ARShooting_Statics::NewProp_GetFwrdCam = { "GetFwrdCam", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventARShooting_Parms, GetFwrdCam), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGunProperties_ARShooting_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_ARShooting_Statics::NewProp_GetFwrdCam,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_ARShooting_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GunProperties.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGunProperties_ARShooting_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGunProperties, nullptr, "ARShooting", nullptr, nullptr, sizeof(GunProperties_eventARShooting_Parms), Z_Construct_UFunction_AGunProperties_ARShooting_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ARShooting_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00820401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_ARShooting_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ARShooting_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGunProperties_ARShooting()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGunProperties_ARShooting_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AGunProperties_Fire_Statics
 	{
 		struct GunProperties_eventFire_Parms
 		{
 			FVector GetFwrCam;
+			UCameraComponent* PlayerCam;
 		};
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_GetFwrCam;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerCam_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_PlayerCam;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -252,8 +346,15 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_Fire_Statics::NewProp_GetFwrCam = { "GetFwrCam", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventFire_Parms, GetFwrCam), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_Fire_Statics::NewProp_PlayerCam_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AGunProperties_Fire_Statics::NewProp_PlayerCam = { "PlayerCam", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventFire_Parms, PlayerCam), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_Fire_Statics::NewProp_PlayerCam_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_Fire_Statics::NewProp_PlayerCam_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGunProperties_Fire_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_Fire_Statics::NewProp_GetFwrCam,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_Fire_Statics::NewProp_PlayerCam,
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_Fire_Statics::Function_MetaDataParams[] = {
@@ -304,6 +405,186 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics
+	{
+		struct GunProperties_eventProcessARHit_Parms
+		{
+			FHitResult Impact;
+			FVector Origin;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Impact_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Impact;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Origin_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Origin;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Impact_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Impact = { "Impact", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventProcessARHit_Parms, Impact), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Impact_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Impact_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Origin_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Origin = { "Origin", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventProcessARHit_Parms, Origin), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Origin_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Origin_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Impact,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::NewProp_Origin,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GunProperties.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGunProperties, nullptr, "ProcessARHit", nullptr, nullptr, sizeof(GunProperties_eventProcessARHit_Parms), Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C80401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGunProperties_ProcessARHit()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGunProperties_ProcessARHit_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics
+	{
+		struct GunProperties_eventProcessInstantHit_Parms
+		{
+			FHitResult Impact;
+			FVector Origin;
+			FVector ShootDir;
+			int32 RandomSeed;
+			float RadicalSpread;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Impact_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Impact;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Origin_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Origin;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ShootDir_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ShootDir;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_RandomSeed;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_RadicalSpread;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Impact_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Impact = { "Impact", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventProcessInstantHit_Parms, Impact), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Impact_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Impact_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Origin_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Origin = { "Origin", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventProcessInstantHit_Parms, Origin), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Origin_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Origin_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_ShootDir_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_ShootDir = { "ShootDir", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventProcessInstantHit_Parms, ShootDir), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_ShootDir_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_ShootDir_MetaData)) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_RandomSeed = { "RandomSeed", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventProcessInstantHit_Parms, RandomSeed), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_RadicalSpread = { "RadicalSpread", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventProcessInstantHit_Parms, RadicalSpread), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Impact,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_Origin,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_ShootDir,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_RandomSeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::NewProp_RadicalSpread,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GunProperties.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGunProperties, nullptr, "ProcessInstantHit", nullptr, nullptr, sizeof(GunProperties_eventProcessInstantHit_Parms), Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C80401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGunProperties_ProcessInstantHit()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGunProperties_ProcessInstantHit_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics
+	{
+		struct GunProperties_eventWeaponTrace_Parms
+		{
+			FVector TraceFrom;
+			FVector TraceTo;
+			FHitResult ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TraceFrom_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_TraceFrom;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_TraceTo_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_TraceTo;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceFrom_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceFrom = { "TraceFrom", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventWeaponTrace_Parms, TraceFrom), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceFrom_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceFrom_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceTo_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceTo = { "TraceTo", nullptr, (EPropertyFlags)0x0010000008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventWeaponTrace_Parms, TraceTo), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceTo_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceTo_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008000000580, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(GunProperties_eventWeaponTrace_Parms, ReturnValue), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceFrom,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_TraceTo,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "GunProperties.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AGunProperties, nullptr, "WeaponTrace", nullptr, nullptr, sizeof(GunProperties_eventWeaponTrace_Parms), Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x40C80401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AGunProperties_WeaponTrace()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AGunProperties_WeaponTrace_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AGunProperties_NoRegister()
 	{
 		return AGunProperties::StaticClass();
@@ -331,6 +612,11 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponMesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WeaponMesh;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_RecoilPattern_Inner;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RecoilPattern_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_RecoilPattern;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -340,8 +626,12 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 		(UObject* (*)())Z_Construct_UPackage__Script_PlayervsAI,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AGunProperties_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AGunProperties_Fire, "Fire" }, // 1910549093
+		{ &Z_Construct_UFunction_AGunProperties_ARShooting, "ARShooting" }, // 238680573
+		{ &Z_Construct_UFunction_AGunProperties_Fire, "Fire" }, // 2338693623
 		{ &Z_Construct_UFunction_AGunProperties_InstantFire, "InstantFire" }, // 2814212513
+		{ &Z_Construct_UFunction_AGunProperties_ProcessARHit, "ProcessARHit" }, // 3138860099
+		{ &Z_Construct_UFunction_AGunProperties_ProcessInstantHit, "ProcessInstantHit" }, // 2320110542
+		{ &Z_Construct_UFunction_AGunProperties_WeaponTrace, "WeaponTrace" }, // 2333191729
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGunProperties_Statics::Class_MetaDataParams[] = {
@@ -379,11 +669,20 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGunProperties_Statics::NewProp_WeaponMesh = { "WeaponMesh", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGunProperties, WeaponMesh), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGunProperties_Statics::NewProp_WeaponMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGunProperties_Statics::NewProp_WeaponMesh_MetaData)) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AGunProperties_Statics::NewProp_RecoilPattern_Inner = { "RecoilPattern", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGunProperties_Statics::NewProp_RecoilPattern_MetaData[] = {
+		{ "ModuleRelativePath", "GunProperties.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AGunProperties_Statics::NewProp_RecoilPattern = { "RecoilPattern", nullptr, (EPropertyFlags)0x0020080000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGunProperties, RecoilPattern), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AGunProperties_Statics::NewProp_RecoilPattern_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGunProperties_Statics::NewProp_RecoilPattern_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AGunProperties_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunProperties_Statics::NewProp_WeaponConfig,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunProperties_Statics::NewProp_ProjectileType,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunProperties_Statics::NewProp_CollisionComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunProperties_Statics::NewProp_WeaponMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunProperties_Statics::NewProp_RecoilPattern_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AGunProperties_Statics::NewProp_RecoilPattern,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AGunProperties_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AGunProperties>::IsAbstract,
@@ -412,7 +711,7 @@ static struct FScriptStruct_PlayervsAI_StaticRegisterNativesFWeaponData
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGunProperties, 2513246409);
+	IMPLEMENT_CLASS(AGunProperties, 3434306680);
 	template<> PLAYERVSAI_API UClass* StaticClass<AGunProperties>()
 	{
 		return AGunProperties::StaticClass();

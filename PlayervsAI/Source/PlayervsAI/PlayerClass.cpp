@@ -63,7 +63,7 @@ void APlayerClass::BeginPlay()
 
 void APlayerClass::Fire()
 {
-	CurrentWeapon->Fire(FirstPersonCamera->GetForwardVector());
+	CurrentWeapon->Fire(FirstPersonCamera->GetForwardVector(),FirstPersonCamera);
 }
 
 void APlayerClass::StartFire()
