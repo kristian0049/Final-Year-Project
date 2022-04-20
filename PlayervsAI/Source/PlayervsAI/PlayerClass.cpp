@@ -63,12 +63,15 @@ void APlayerClass::BeginPlay()
 
 void APlayerClass::Fire()
 {
-	CurrentWeapon->Fire(FirstPersonCamera->GetForwardVector(),FirstPersonCamera);
+	CurrentWeapon->Fire(FirstPersonCamera->GetForwardVector(),FirstPersonCamera, TimerHandle_HandleRefire);
 }
+
+
 
 void APlayerClass::StartFire()
 {
 	bIsFiring = true;
+	Fire();
 	GetWorldTimerManager().SetTimer(TimerHandle_HandleRefire, this, &APlayerClass::Fire, CurrentWeapon->WeaponConfig.TimeBetweenShots, true);
 }
 
@@ -76,6 +79,7 @@ void APlayerClass::StopFire()
 {
 	bIsFiring = false;
 	GetWorldTimerManager().ClearTimer(TimerHandle_HandleRefire);
+	
 }
 
 void APlayerClass::MoveForward(float Value)
@@ -126,11 +130,8 @@ void APlayerClass::LookAtRate(float Rate)
 void APlayerClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	if (bIsFiring)
-	{
-		Fire();
-	}
-		
+	
+	CurrentWeapon->IsPlayerFiring(bIsFiring);
 	
 }
 
@@ -141,7 +142,7 @@ void APlayerClass::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerClass::Fire);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APlayerClass::StartFire);
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &APlayerClass::StopFire);
 
 	PlayerInputComponent->BindAxis("MoveForward",  this, &APlayerClass::MoveForward);
@@ -153,4 +154,6 @@ void APlayerClass::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAxis("LookUp",this, &APlayerClass::LookAtRate);
 
 }
+
+
 

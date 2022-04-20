@@ -14,12 +14,14 @@ AGunProperties::AGunProperties()
 }
 
 
-void AGunProperties::Fire(FVector GetFwrCam, UCameraComponent* PlayerCam)
+void AGunProperties::Fire(FVector GetFwrCam, UCameraComponent* PlayerCam, FTimerHandle _ShootingHandler)
 {
 	if (ProjectileType == EWeaponProjectile::EBullet)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, TEXT("Bullet"));
-		ARShooting(GetFwrCam);
+		//GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, TEXT("Bullet"))
+		HandleRecoil(_ShootingHandler);
+		ARShooting(GetFwrCam,_ShootingHandler);
+		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, *RecoilPattern[CurrentRecoil].ToString());
 	}
 	if (ProjectileType == EWeaponProjectile::ESpread)
 	{
@@ -50,20 +52,42 @@ void AGunProperties::InstantFire(FVector GetFwrCam)
 	ProcessInstantHit(Impact, StartTrace, ShootDir, RandomSeed, CurrentSpread);
 }
 
-void AGunProperties::ARShooting(FVector GetFwrdCam)
+void AGunProperties::ARShooting(FVector GetFwrdCam, FTimerHandle _ShootingHandler)
 {
-	if (GetWorld()->DeltaTimeSeconds - LastTimeShot >= 1 / WeaponConfig.TimeBetweenShots)
-	{
-		//We can shoot again
-		FVector StartTrace = WeaponMesh->GetSocketLocation("MF");
-		FVector CameraDir = FVector(GetFwrdCam.X, GetFwrdCam.Y, GetFwrdCam.Z - 0.025);
-		const FVector EndTrace = StartTrace + CameraDir * WeaponConfig.WeaponRange;
-		const FHitResult Impact = WeaponTrace(StartTrace, EndTrace);
-		ProcessARHit(Impact, StartTrace);
+	
+	const FVector StartTrace = WeaponMesh->GetSocketLocation("MF");
+	const FVector CameraDir = FVector(GetFwrdCam.X, GetFwrdCam.Y, GetFwrdCam.Z );
+	const FVector EndTrace = StartTrace +   CameraDir * WeaponConfig.WeaponRange;
+	const FHitResult Impact = WeaponTrace(StartTrace, EndTrace);
+	ProcessARHit(Impact, StartTrace);
+	LastTimeShot = GetWorldTimerManager().GetTimerElapsed(_ShootingHandler);
+}
 
-		LastTimeShot = GetWorld()->DeltaTimeSeconds;
+void AGunProperties::HandleRecoil(FTimerHandle _ShootingHandler)
+{
+	//I need it to rotate on the yaw and roll
+	if (GetWorldTimerManager().GetTimerElapsed(_ShootingHandler) - LastTimeShot >= WeaponConfig.ResetRecoil) {
+		ShootDirAr = RecoilPattern[0];
+		CurrentRecoil = 1;
+	}
+	else {
+		RecoilPattern[CurrentRecoil];
+		if (CurrentRecoil + 1 <= RecoilPattern.Num() - 1)
+		{
+			CurrentRecoil += 1;
+		}
+		else {
+			CurrentRecoil = 0;
+		}
 	}
 }
+
+bool AGunProperties::IsPlayerFiring(bool _isFiring)
+{
+	return _isFiring;
+}
+
+
 
 FHitResult AGunProperties::WeaponTrace(const FVector& TraceFrom, const FVector& TraceTo) const
 {

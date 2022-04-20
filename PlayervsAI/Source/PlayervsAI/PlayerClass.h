@@ -24,6 +24,7 @@ protected:
 	UFUNCTION()
 	void Fire();
 
+	
 	void StartFire();
 	void StopFire();
 	void MoveForward(float Value);
@@ -65,9 +66,15 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = Spawn)
 		TSubclassOf<class AGunProperties> WeaponSpawn;
 	
+	
+	
+	
+
+	
+
 	AGunProperties *CurrentWeapon;
 
-	bool bIsFiring = false;
+	bool bIsFiring ;
 
 	FTimerHandle TimerHandle_HandleRefire;
 };

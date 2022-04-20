@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodePlayervsAI_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x41B877C4,
+				0x6BBCAAC6,
 				0xB63B28AD,
 				METADATA_PARAMS(nullptr, 0)
 			};
