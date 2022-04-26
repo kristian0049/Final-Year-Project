@@ -30,9 +30,9 @@ template<> PLAYERVSAI_API UScriptStruct* StaticStruct<struct FWeaponData>();
 	DECLARE_FUNCTION(execProcessARHit); \
 	DECLARE_FUNCTION(execProcessInstantHit); \
 	DECLARE_FUNCTION(execWeaponTrace); \
-	DECLARE_FUNCTION(execIsPlayerFiring); \
+	DECLARE_FUNCTION(execInterpRecoil); \
+	DECLARE_FUNCTION(execInterpFinalRecoil); \
 	DECLARE_FUNCTION(execARShooting); \
-	DECLARE_FUNCTION(execHandleRecoil); \
 	DECLARE_FUNCTION(execInstantFire); \
 	DECLARE_FUNCTION(execFire);
 
@@ -42,9 +42,9 @@ template<> PLAYERVSAI_API UScriptStruct* StaticStruct<struct FWeaponData>();
 	DECLARE_FUNCTION(execProcessARHit); \
 	DECLARE_FUNCTION(execProcessInstantHit); \
 	DECLARE_FUNCTION(execWeaponTrace); \
-	DECLARE_FUNCTION(execIsPlayerFiring); \
+	DECLARE_FUNCTION(execInterpRecoil); \
+	DECLARE_FUNCTION(execInterpFinalRecoil); \
 	DECLARE_FUNCTION(execARShooting); \
-	DECLARE_FUNCTION(execHandleRecoil); \
 	DECLARE_FUNCTION(execInstantFire); \
 	DECLARE_FUNCTION(execFire);
 

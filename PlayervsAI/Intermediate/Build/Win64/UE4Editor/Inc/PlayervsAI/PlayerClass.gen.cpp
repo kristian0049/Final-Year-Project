@@ -24,6 +24,13 @@ void EmptyLinkFunctionForGeneratedCodePlayerClass() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	PLAYERVSAI_API UClass* Z_Construct_UClass_AGunProperties_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(APlayerClass::execGetHands)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(USkeletalMeshComponent**)Z_Param__Result=P_THIS->GetHands();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(APlayerClass::execFire)
 	{
 		P_FINISH;
@@ -36,6 +43,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerClass() {}
 		UClass* Class = APlayerClass::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Fire", &APlayerClass::execFire },
+			{ "GetHands", &APlayerClass::execGetHands },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -58,6 +66,46 @@ void EmptyLinkFunctionForGeneratedCodePlayerClass() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerClass_Fire_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APlayerClass_GetHands_Statics
+	{
+		struct PlayerClass_eventGetHands_Parms
+		{
+			USkeletalMeshComponent* ReturnValue;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerClass_GetHands_Statics::NewProp_ReturnValue_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_APlayerClass_GetHands_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(PlayerClass_eventGetHands_Parms, ReturnValue), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_APlayerClass_GetHands_Statics::NewProp_ReturnValue_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_APlayerClass_GetHands_Statics::NewProp_ReturnValue_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APlayerClass_GetHands_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APlayerClass_GetHands_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayerClass_GetHands_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "PlayerClass.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayerClass_GetHands_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayerClass, nullptr, "GetHands", nullptr, nullptr, sizeof(PlayerClass_eventGetHands_Parms), Z_Construct_UFunction_APlayerClass_GetHands_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APlayerClass_GetHands_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayerClass_GetHands_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlayerClass_GetHands_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayerClass_GetHands()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayerClass_GetHands_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -104,6 +152,10 @@ void EmptyLinkFunctionForGeneratedCodePlayerClass() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WeaponSpawn_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_WeaponSpawn;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CurrentWeapon_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CurrentWeapon;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -114,6 +166,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerClass() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APlayerClass_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_APlayerClass_Fire, "Fire" }, // 3684791307
+		{ &Z_Construct_UFunction_APlayerClass_GetHands, "GetHands" }, // 2495533216
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerClass_Statics::Class_MetaDataParams[] = {
@@ -182,6 +235,13 @@ void EmptyLinkFunctionForGeneratedCodePlayerClass() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_APlayerClass_Statics::NewProp_WeaponSpawn = { "WeaponSpawn", nullptr, (EPropertyFlags)0x0014000000020001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerClass, WeaponSpawn), Z_Construct_UClass_AGunProperties_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_APlayerClass_Statics::NewProp_WeaponSpawn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerClass_Statics::NewProp_WeaponSpawn_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayerClass_Statics::NewProp_CurrentWeapon_MetaData[] = {
+		{ "Category", "AR Config" },
+		{ "ModuleRelativePath", "PlayerClass.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayerClass_Statics::NewProp_CurrentWeapon = { "CurrentWeapon", nullptr, (EPropertyFlags)0x0010000000000014, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayerClass, CurrentWeapon), Z_Construct_UClass_AGunProperties_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayerClass_Statics::NewProp_CurrentWeapon_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayerClass_Statics::NewProp_CurrentWeapon_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APlayerClass_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerClass_Statics::NewProp_HandsMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerClass_Statics::NewProp_GunMesh,
@@ -191,6 +251,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerClass() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerClass_Statics::NewProp_LookUpRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerClass_Statics::NewProp_GunOffset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerClass_Statics::NewProp_WeaponSpawn,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APlayerClass_Statics::NewProp_CurrentWeapon,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APlayerClass_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APlayerClass>::IsAbstract,
@@ -219,7 +280,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerClass() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayerClass, 3798005259);
+	IMPLEMENT_CLASS(APlayerClass, 1712503485);
 	template<> PLAYERVSAI_API UClass* StaticClass<APlayerClass>()
 	{
 		return APlayerClass::StaticClass();

@@ -67,14 +67,19 @@ public:
 		TSubclassOf<class AGunProperties> WeaponSpawn;
 	
 	
-	
+	UFUNCTION(BlueprintPure)
+		USkeletalMeshComponent* GetHands() const { return HandsMesh; }
 	
 
 	
-
+	UPROPERTY(BlueprintReadOnly, Category = "AR Config")
 	AGunProperties *CurrentWeapon;
 
 	bool bIsFiring ;
 
 	FTimerHandle TimerHandle_HandleRefire;
+
+	UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCamera; }
+
+	AGunProperties* GetCurrentWeapon() const { return CurrentWeapon; }
 };

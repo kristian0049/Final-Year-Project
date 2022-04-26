@@ -3,6 +3,7 @@
 
 #include "GunProperties.h"
 #include "Engine.h"
+#include "Kismet/KismetMathLibrary.h"
 AGunProperties::AGunProperties() 
 {
 	PrimaryActorTick.bCanEverTick = true;
@@ -19,9 +20,9 @@ void AGunProperties::Fire(FVector GetFwrCam, UCameraComponent* PlayerCam, FTimer
 	if (ProjectileType == EWeaponProjectile::EBullet)
 	{
 		//GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, TEXT("Bullet"))
-		HandleRecoil(_ShootingHandler);
+		
 		ARShooting(GetFwrCam,_ShootingHandler);
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, *RecoilPattern[CurrentRecoil].ToString());
+		
 	}
 	if (ProjectileType == EWeaponProjectile::ESpread)
 	{
@@ -54,38 +55,13 @@ void AGunProperties::InstantFire(FVector GetFwrCam)
 
 void AGunProperties::ARShooting(FVector GetFwrdCam, FTimerHandle _ShootingHandler)
 {
+	FRotator RecoilRot = FinalRecoilTransform.GetRotation().Rotator();
+	RecoilRot += FRotator(0.0f, 0.0f, -10.0f);
 	
-	const FVector StartTrace = WeaponMesh->GetSocketLocation("MF");
-	const FVector CameraDir = FVector(GetFwrdCam.X, GetFwrdCam.Y, GetFwrdCam.Z );
-	const FVector EndTrace = StartTrace +   CameraDir * WeaponConfig.WeaponRange;
-	const FHitResult Impact = WeaponTrace(StartTrace, EndTrace);
-	ProcessARHit(Impact, StartTrace);
-	LastTimeShot = GetWorldTimerManager().GetTimerElapsed(_ShootingHandler);
+	FinalRecoilTransform.SetRotation(RecoilRot.Quaternion());
+	
 }
 
-void AGunProperties::HandleRecoil(FTimerHandle _ShootingHandler)
-{
-	//I need it to rotate on the yaw and roll
-	if (GetWorldTimerManager().GetTimerElapsed(_ShootingHandler) - LastTimeShot >= WeaponConfig.ResetRecoil) {
-		ShootDirAr = RecoilPattern[0];
-		CurrentRecoil = 1;
-	}
-	else {
-		RecoilPattern[CurrentRecoil];
-		if (CurrentRecoil + 1 <= RecoilPattern.Num() - 1)
-		{
-			CurrentRecoil += 1;
-		}
-		else {
-			CurrentRecoil = 0;
-		}
-	}
-}
-
-bool AGunProperties::IsPlayerFiring(bool _isFiring)
-{
-	return _isFiring;
-}
 
 
 
@@ -114,4 +90,22 @@ void AGunProperties::ProcessARHit(const FHitResult& Impact, const FVector& Origi
 	const FVector EndTrace = Origin * WeaponConfig.WeaponRange;
 	const FVector EndPoint = Impact.GetActor() ? Impact.ImpactPoint : EndTrace;
 	DrawDebugLine(this->GetWorld(), Origin, Impact.TraceEnd, FColor::Black, true, 1000, 10.f);
+}
+
+
+void AGunProperties::InterpFinalRecoil(float DeltaSeconds) 
+{
+	//Interp To Zero
+	if (ProjectileType == EWeaponProjectile::EBullet)
+	{
+		FinalRecoilTransform = UKismetMathLibrary::TInterpTo(RecoilTransform, FinalRecoilTransform, DeltaSeconds, 10.0f);
+	}
+}
+
+void AGunProperties::InterpRecoil(float DeltaSeconds)
+{
+	if (ProjectileType == EWeaponProjectile::EBullet)
+	{
+
+	}
 }

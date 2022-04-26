@@ -51,89 +51,57 @@ class PLAYERVSAI_API AGunProperties : public AActor
 
 
 
-	
-public:	
-	
+
+public:
+
 	// Called when the game starts or when spawned
 	AGunProperties();
 	// Called every frame
 	UFUNCTION()
-	void Fire(FVector GetFwrCam, UCameraComponent* PlayerCam, FTimerHandle _ShootingHandler);
-	
-	UFUNCTION()
-	void InstantFire(FVector GetFwrCam);
+		void Fire(FVector GetFwrCam, UCameraComponent* PlayerCam, FTimerHandle _ShootingHandler);
 
 	UFUNCTION()
-	void HandleRecoil(FTimerHandle _ShootingHandler);
+		void InstantFire(FVector GetFwrCam);
+
+
 
 	UFUNCTION()
-	void ARShooting(FVector GetFwrdCam, FTimerHandle _ShootingHandler);
+		void ARShooting(FVector GetFwrdCam, FTimerHandle _ShootingHandler);
 
-	UFUNCTION()
-	bool IsPlayerFiring(bool _isFiring);
 
 	UPROPERTY(EditDefaultsOnly, Category = Config)
-	FWeaponData WeaponConfig;
+		FWeaponData WeaponConfig;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = Config)
-	TEnumAsByte<EWeaponProjectile::ProjectileType> ProjectileType;
+		TEnumAsByte<EWeaponProjectile::ProjectileType> ProjectileType;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Collision)
 		UBoxComponent* CollisionComp;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Config)
 		USkeletalMeshComponent* WeaponMesh;
-	UPROPERTY()
-		TArray<FVector> RecoilPattern{
-			FVector(0, 0, 0.0),
-			FVector(0, 0, 0.0),
-			FVector(0, 0, 0.0),
-			FVector(0, 0, 0.3),
-			FVector(0, 0, 0.3),
-			FVector(0, 0, 0.3),
 
-			FVector(0,0, 0.5),
-			FVector(0,0, 0.5),
-			FVector(0,0, 0.5),
-			FVector(0,0, 0.5),
-			FVector(0,0, 0.5),
-			FVector(0,0, 0.5),
+	UFUNCTION()
+		void InterpFinalRecoil(float DeltaSeconds);
 
-			FVector(0,0,0.6),
-			FVector(0,0,0.6),
-			FVector(0,0,0.6),
-			FVector(0,0,0.6),
-			FVector(0,0,0.6),
-			FVector(0,0,0.6),
+	UFUNCTION()
+		void InterpRecoil(float DeltaSeconds);
 
-			FVector(0, -3, 0),
-			FVector(0, -0.3, 0),
-			FVector(0, -0.3, 0),
-			FVector(0, -0.3, 0),
-			FVector(0, -0.3, 0),
-			FVector(0, -0.3, 0),
+	UPROPERTY(BlueprintReadOnly, Category = "AR Config")
+		FTransform RecoilTransform;
 
-			FVector(0, 0.3, 0),
-			FVector(0, 0.3, 0),
-			FVector(0, 0.3, 0),
-			FVector(0, 0.3, 0),
-			FVector(0, 0.3, 0),
-			FVector(0, 0.3, 0)
-	};
-	protected:
-		UFUNCTION()
-		FHitResult WeaponTrace(const FVector &TraceFrom, const FVector &TraceTo) const;
+	UPROPERTY(BlueprintReadOnly, Category = "AR Config")
+		FTransform FinalRecoilTransform;
+protected:
+	UFUNCTION()
+		FHitResult WeaponTrace(const FVector& TraceFrom, const FVector& TraceTo) const;
 
-		UFUNCTION()
+	UFUNCTION()
 		void ProcessInstantHit(const FHitResult& Impact, const FVector& Origin, const FVector& ShootDir, int32 RandomSeed, float RadicalSpread);
 
-		UFUNCTION()
+	UFUNCTION()
 		void ProcessARHit(const FHitResult& Impact, const FVector& Origin);
-		
-		FVector ShootDirAr;
+
 	
-		int8 CurrentRecoil = 0;
-		float LastTimeShot;
-		
 
 };

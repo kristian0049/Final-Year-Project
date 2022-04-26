@@ -56,7 +56,7 @@ void APlayerClass::BeginPlay()
 	AGunProperties* Spawner = GetWorld()->SpawnActor<AGunProperties>(WeaponSpawn,SpawnParams);
 	if (Spawner)
 	{
-		Spawner->AttachToComponent(HandsMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale, TEXT("GripPoint"));
+		Spawner->AttachToComponent(HandsMesh, FAttachmentTransformRules::SnapToTargetNotIncludingScale, TEXT("Hand_R"));
 		CurrentWeapon = Spawner;
 	}
 }
@@ -131,8 +131,8 @@ void APlayerClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
-	CurrentWeapon->IsPlayerFiring(bIsFiring);
-	
+	CurrentWeapon->InterpRecoil(DeltaTime);
+	CurrentWeapon->InterpFinalRecoil(DeltaTime);
 }
 
 // Called to bind functionality to input

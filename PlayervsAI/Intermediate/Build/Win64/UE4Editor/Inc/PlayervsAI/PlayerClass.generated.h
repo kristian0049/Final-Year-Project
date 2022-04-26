@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class USkeletalMeshComponent;
 #ifdef PLAYERVSAI_PlayerClass_generated_h
 #error "PlayerClass.generated.h already included, missing '#pragma once' in PlayerClass.h"
 #endif
@@ -16,11 +17,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define PlayervsAI_Source_PlayervsAI_PlayerClass_h_14_SPARSE_DATA
 #define PlayervsAI_Source_PlayervsAI_PlayerClass_h_14_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetHands); \
 	DECLARE_FUNCTION(execFire);
 
 
 #define PlayervsAI_Source_PlayervsAI_PlayerClass_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetHands); \
 	DECLARE_FUNCTION(execFire);
 
 
