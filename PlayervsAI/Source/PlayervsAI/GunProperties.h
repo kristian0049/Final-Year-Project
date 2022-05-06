@@ -8,6 +8,8 @@
 #include "Components/BoxComponent.h"
 #include "GunProperties.generated.h"
 
+
+
 #define TRACE_WEAPON  ECC_GameTraceChannel1
 UENUM(BlueprintType)
 namespace EWeaponProjectile
@@ -27,23 +29,18 @@ struct FWeaponData
 {
 	GENERATED_USTRUCT_BODY()
 
-	
-	UPROPERTY(EditDefaultsOnly, Category = Ammo)
-		int32 MaxAmmo;
 	UPROPERTY(EditDefaultsOnly, Category = Config)
 		float TimeBetweenShots;
-	UPROPERTY(EditDefaultsOnly, Category = Ammo)
-		int32 ShotCost;
 	UPROPERTY(EditDefaultsOnly, Category = Config)
 		float WeaponRange;
 	UPROPERTY(EditDefaultsOnly, Category = Config)
 		float WeaponSpread;
 	UPROPERTY(EditDefaultsOnly, Category = Config)
-		float MagazineAmmoForAR;
-	UPROPERTY(EditDefaultsOnly, Category = Config)
-		float ResetRecoil ;
+		float DamageValue;
 };
 
+class APlayerClass;
+class APlayervsAIProjectile;
 UCLASS()
 class PLAYERVSAI_API AGunProperties : public AActor
 {
@@ -58,16 +55,16 @@ public:
 	AGunProperties();
 	// Called every frame
 	UFUNCTION()
-		void Fire(FVector GetFwrCam, UCameraComponent* PlayerCam, FTimerHandle _ShootingHandler);
+		 void Fire(FVector GetFwrCam, UCameraComponent* PlayerCam, FTimerHandle _ShootingHandler, APlayerClass* Player);
 
 	UFUNCTION()
-		void InstantFire(FVector GetFwrCam);
-
-
+		 void InstantFire(FVector GetFwrCam);
+	
 
 	UFUNCTION()
-		void ARShooting(FVector GetFwrdCam, FTimerHandle _ShootingHandler);
-
+		 void ARShooting(FVector GetFwrdCam, FTimerHandle _ShootingHandler, APlayerClass* Player);
+	 
+	
 
 	UPROPERTY(EditDefaultsOnly, Category = Config)
 		FWeaponData WeaponConfig;
@@ -81,17 +78,8 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Config)
 		USkeletalMeshComponent* WeaponMesh;
 
-	UFUNCTION()
-		void InterpFinalRecoil(float DeltaSeconds);
 
-	UFUNCTION()
-		void InterpRecoil(float DeltaSeconds);
-
-	UPROPERTY(BlueprintReadOnly, Category = "AR Config")
-		FTransform RecoilTransform;
-
-	UPROPERTY(BlueprintReadOnly, Category = "AR Config")
-		FTransform FinalRecoilTransform;
+	USkeletalMeshComponent* GetWeaponMesh()const { return WeaponMesh; }
 protected:
 	UFUNCTION()
 		FHitResult WeaponTrace(const FVector& TraceFrom, const FVector& TraceTo) const;
@@ -104,4 +92,12 @@ protected:
 
 	
 
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+	TSubclassOf<class APlayervsAIProjectile> ProjectileClass;
+
+	FVector GunOffset;
+
+	UFUNCTION()
+	void ProjectileShooting(APlayerClass* Player);
+	
 };

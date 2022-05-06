@@ -3,6 +3,7 @@
 #include "PlayervsAIProjectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
+#include "Enemy.h"
 
 APlayervsAIProjectile::APlayervsAIProjectile() 
 {
@@ -26,7 +27,7 @@ APlayervsAIProjectile::APlayervsAIProjectile()
 	ProjectileMovement->MaxSpeed = 3000.f;
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
-
+	ProjectileMovement->ProjectileGravityScale = 0.0;
 	// Die after 3 seconds by default
 	InitialLifeSpan = 3.0f;
 }
@@ -34,10 +35,21 @@ APlayervsAIProjectile::APlayervsAIProjectile()
 void APlayervsAIProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
 	// Only add impulse and destroy projectile if we hit a physics
-	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
+	
+	AEnemy* Enemy = Cast<AEnemy>(OtherActor);
+	if (Enemy)
 	{
+		Enemy->DealDamage(30);
+	}else if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
+	{
+		
+		
+		
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
-
+		
 		Destroy();
+		
 	}
+		
+	
 }

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PlayervsAI.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{D653EA33-2880-40F0-8C59-F4366B0AED62}</UniqueIdentifier>
+      <UniqueIdentifier>{EB581E52-6F6D-47C0-A586-CA59ECD9DD38}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PlayervsAI.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{40F569E3-04F7-45C3-9784-970E68314EB9}</UniqueIdentifier>
+      <UniqueIdentifier>{9CCD435A-2228-47BF-99C0-165BACB8A088}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,18 +30,60 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PlayervsAI">
-      <UniqueIdentifier>{8465DE27-377D-4049-9211-1A72FA780DBA}</UniqueIdentifier>
+      <UniqueIdentifier>{AAB5189F-149F-47AF-9FD7-EF8E3B0E7377}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\PlayervsAI\BossTargetLocation.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\BossTargetLocation.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\Enemy.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\Enemy.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\EnemyAIProjectile.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\EnemyAIProjectile.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\EnemyController.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\EnemyController.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\PlayervsAI\FirstPersonShooterMode.cpp">
       <Filter>Source\PlayervsAI</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PlayervsAI\FirstPersonShooterMode.h">
       <Filter>Source\PlayervsAI</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\Grid.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\Grid.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\PlayervsAI\GunProperties.cpp">
       <Filter>Source\PlayervsAI</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PlayervsAI\GunProperties.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\HealthStation.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\HealthStation.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\OneAttackAtATime.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\OneAttackAtATime.h">
       <Filter>Source\PlayervsAI</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PlayervsAI\PlayerAnimations.cpp">
@@ -83,6 +125,35 @@
     <ClInclude Include="..\..\Source\PlayervsAI\PlayervsAIProjectile.h">
       <Filter>Source\PlayervsAI</Filter>
     </ClInclude>
-    <None Include="cpp.hint" />
+    <ClCompile Include="..\..\Source\PlayervsAI\SpawnerActor.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\SpawnerActor.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\Spikes.cpp">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\Spikes.h">
+      <Filter>Source\PlayervsAI</Filter>
+    </ClInclude>
+    <Filter Include="Source\PlayervsAI\TP_ThirdPerson">
+      <UniqueIdentifier>{E3375B6C-D41C-4490-A4A3-05C5525BD3CD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\PlayervsAI\TP_ThirdPerson\TP_ThirdPerson.h">
+      <Filter>Source\PlayervsAI\TP_ThirdPerson</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\TP_ThirdPerson\TP_ThirdPersonCharacter.cpp">
+      <Filter>Source\PlayervsAI\TP_ThirdPerson</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\TP_ThirdPerson\TP_ThirdPersonCharacter.h">
+      <Filter>Source\PlayervsAI\TP_ThirdPerson</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PlayervsAI\TP_ThirdPerson\TP_ThirdPersonGameMode.cpp">
+      <Filter>Source\PlayervsAI\TP_ThirdPerson</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PlayervsAI\TP_ThirdPerson\TP_ThirdPersonGameMode.h">
+      <Filter>Source\PlayervsAI\TP_ThirdPerson</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

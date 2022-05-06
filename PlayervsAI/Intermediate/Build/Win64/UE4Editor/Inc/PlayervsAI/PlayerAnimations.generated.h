@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define PLAYERVSAI_PlayerAnimations_generated_h
 
 #define PlayervsAI_Source_PlayervsAI_PlayerAnimations_h_17_SPARSE_DATA
-#define PlayervsAI_Source_PlayervsAI_PlayerAnimations_h_17_RPC_WRAPPERS
-#define PlayervsAI_Source_PlayervsAI_PlayerAnimations_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define PlayervsAI_Source_PlayervsAI_PlayerAnimations_h_17_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execFire);
+
+
+#define PlayervsAI_Source_PlayervsAI_PlayerAnimations_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execFire);
+
+
 #define PlayervsAI_Source_PlayervsAI_PlayerAnimations_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPlayerAnimations(); \

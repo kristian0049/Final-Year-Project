@@ -1,0 +1,1901 @@
+﻿Log file open, 05/06/22 13:17:32
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: PlayervsAI
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 47 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.463294
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin OculusVR
+LogXGEController: Cleaning working directory: C:/Users/krisk/AppData/Local/Temp/UnrealXGEWorkingDir/
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.26-CL-15973114
+LogInit: Engine Version: 4.26.2-15973114+++UE4+Release-4.26
+LogInit: Compatible Engine Version: 4.26.0-14830424+++UE4+Release-4.26
+LogInit: Net CL: 14830424
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i7-10700F CPU @ 2.90GHz, GPU: NVIDIA GeForce RTX 3070
+LogInit: Compiled (64-bit): Apr 12 2021 06:14:10
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.26
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.26/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 44
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 43
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 40
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2022.05.06-12.17.33:160][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2022.05.06-12.17.33:160][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2022.05.06-12.17.33:161][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Engine.ini]
+[2022.05.06-12.17.33:161][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2022.05.06-12.17.33:161][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Engine.ini]
+[2022.05.06-12.17.33:161][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Engine.ini]
+[2022.05.06-12.17.33:161][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2022.05.06-12.17.33:161][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2022.05.06-12.17.33:161][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2022.05.06-12.17.33:161][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2022.05.06-12.17.33:161][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Engine.ini]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2022.05.06-12.17.33:162][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2022.05.06-12.17.33:163][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2022.05.06-12.17.33:163][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2022.05.06-12.17.33:163][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2022.05.06-12.17.33:163][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2022.05.06-12.17.33:163][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2022.05.06-12.17.33:163][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2022.05.06-12.17.33:163][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2022.05.06-12.17.33:163][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Engine.ini]
+[2022.05.06-12.17.33:163][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Engine.ini]
+[2022.05.06-12.17.33:208][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:208][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.05.06-12.17.33:208][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.05.06-12.17.33:208][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:208][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.05.06-12.17.33:208][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:208][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2022.05.06-12.17.33:209][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.05.06-12.17.33:210][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2022.05.06-12.17.33:211][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.05.06-12.17.33:212][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.05.06-12.17.33:213][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.05.06-12.17.33:214][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.05.06-12.17.33:215][  0]LogInit: Selected Device Profile: [Windows]
+[2022.05.06-12.17.33:215][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2022.05.06-12.17.33:216][  0]LogHAL: Display: Platform has ~ 16 GB [17091375104 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2022.05.06-12.17.33:216][  0]LogInit: Going up to parent DeviceProfile []
+[2022.05.06-12.17.33:217][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@0] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:0]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.ShadowQuality:0]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:1]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:512]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:512]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.06]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:0.6]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:0]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:0.5]]
+[2022.05.06-12.17.33:217][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:0]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:0]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.VolumetricFog:0]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:0]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.CapsuleShadows:0]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2022.05.06-12.17.33:218][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2022.05.06-12.17.33:219][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Applying CVar settings from Section [TextureQuality@0] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:16]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:1]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:1]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.Streaming.Boost:0.3]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:0]]
+[2022.05.06-12.17.33:220][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:4]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:1]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:400]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2022.05.06-12.17.33:221][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2022.05.06-12.17.33:222][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2022.05.06-12.17.33:223][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2022.05.06-12.17.33:223][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2022.05.06-12.17.33:223][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2022.05.06-12.17.33:223][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:223][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2022.05.06-12.17.33:223][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2022.05.06-12.17.33:223][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Scalability.ini]
+[2022.05.06-12.17.33:223][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2022.05.06-12.17.33:223][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2022.05.06-12.17.33:223][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2022.05.06-12.17.33:223][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2022.05.06-12.17.33:225][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2022.05.06-12.17.33:225][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2022.05.06-12.17.33:225][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2022.05.06-12.17.33:225][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Engine.ini]
+[2022.05.06-12.17.33:225][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Config/Windows/Editor.ini]
+[2022.05.06-12.17.33:227][  0]LogInit: Computer: WINDOWS-FQ0N674
+[2022.05.06-12.17.33:227][  0]LogInit: User: krisk
+[2022.05.06-12.17.33:227][  0]LogInit: CPU Page size=4096, Cores=8
+[2022.05.06-12.17.33:227][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2022.05.06-12.17.33:228][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2022.05.06-12.17.33:228][  0]LogMemory: Platform Memory Stats for Windows
+[2022.05.06-12.17.33:228][  0]LogMemory: Process Physical Memory: 136.35 MB used, 136.36 MB peak
+[2022.05.06-12.17.33:228][  0]LogMemory: Process Virtual Memory: 124.04 MB used, 124.04 MB peak
+[2022.05.06-12.17.33:228][  0]LogMemory: Physical Memory: 11675.62 MB used,  4623.99 MB free, 16299.61 MB total
+[2022.05.06-12.17.33:229][  0]LogMemory: Virtual Memory: 134208600.00 MB used,  9124.70 MB free, 134217728.00 MB total
+[2022.05.06-12.17.33:248][  0]LogWindows: WindowsPlatformFeatures enabled
+[2022.05.06-12.17.33:580][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2022.05.06-12.17.33:583][  0]LogInit: Using OS detected language (en-US).
+[2022.05.06-12.17.33:583][  0]LogInit: Using OS detected locale (en-GB).
+[2022.05.06-12.17.33:602][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2022.05.06-12.17.34:046][  0]LogInit: Setting process to per monitor DPI aware
+[2022.05.06-12.17.34:087][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2022.05.06-12.17.34:169][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2022.05.06-12.17.34:169][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2022.05.06-12.17.37:180][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2022.05.06-12.17.37:180][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2022.05.06-12.17.37:180][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2022.05.06-12.17.37:180][  0]LogD3D11RHI: D3D11 adapters:
+[2022.05.06-12.17.37:330][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 3070' (Feature Level 11_0)
+[2022.05.06-12.17.37:330][  0]LogD3D11RHI:       8043/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2022.05.06-12.17.37:340][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2022.05.06-12.17.37:340][  0]LogD3D11RHI:       0/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2022.05.06-12.17.37:340][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2022.05.06-12.17.37:351][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2022.05.06-12.17.37:351][  0]LogD3D11RHI:     GPU DeviceId: 0x2484 (for the marketing name, search the web for "GPU Device Id")
+[2022.05.06-12.17.37:352][  0]LogWindows: EnumDisplayDevices:
+[2022.05.06-12.17.37:352][  0]LogWindows:    0. 'NVIDIA GeForce RTX 3070' (P:1 D:1)
+[2022.05.06-12.17.37:352][  0]LogWindows:    1. 'NVIDIA GeForce RTX 3070' (P:0 D:1)
+[2022.05.06-12.17.37:353][  0]LogWindows:    2. 'NVIDIA GeForce RTX 3070' (P:0 D:0)
+[2022.05.06-12.17.37:353][  0]LogWindows:    3. 'NVIDIA GeForce RTX 3070' (P:0 D:0)
+[2022.05.06-12.17.37:353][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2022.05.06-12.17.37:353][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 3070
+[2022.05.06-12.17.37:354][  0]LogD3D11RHI:   Driver Version: 512.59 (internal:30.0.15.1259, unified:512.59)
+[2022.05.06-12.17.37:354][  0]LogD3D11RHI:      Driver Date: 4-20-2022
+[2022.05.06-12.17.37:354][  0]LogRHI: Texture pool is 5630 MB (70% of 8043 MB)
+[2022.05.06-12.17.37:441][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2022.05.06-12.17.37:442][  0]LogD3D11RHI: Async texture creation enabled
+[2022.05.06-12.17.37:442][  0]LogD3D11RHI: Array index from any shader is supported
+[2022.05.06-12.17.37:446][  0]LogD3D11RHI: HDR output is supported on display 0 (NvId: 0x80061082).
+[2022.05.06-12.17.37:485][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2022.05.06-12.17.37:494][  0]LogRHI: GeForceNow SDK initialized: 1
+[2022.05.06-12.17.37:876][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2022.05.06-12.17.37:907][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2022.05.06-12.17.37:944][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2022.05.06-12.17.37:945][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2022.05.06-12.17.37:960][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2022.05.06-12.17.37:973][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2022.05.06-12.17.37:988][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2022.05.06-12.17.38:001][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2022.05.06-12.17.38:014][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2022.05.06-12.17.38:027][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2022.05.06-12.17.38:038][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2022.05.06-12.17.38:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2022.05.06-12.17.38:072][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2022.05.06-12.17.38:086][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2022.05.06-12.17.38:100][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2022.05.06-12.17.38:113][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2022.05.06-12.17.38:125][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2022.05.06-12.17.38:144][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2022.05.06-12.17.38:144][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2022.05.06-12.17.38:159][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2022.05.06-12.17.38:175][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2022.05.06-12.17.38:188][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2022.05.06-12.17.38:202][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2022.05.06-12.17.38:202][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2022.05.06-12.17.38:227][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2022.05.06-12.17.38:528][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2022.05.06-12.17.38:529][  0]LogShaderCompilers: Guid format shader working directory is -30 characters bigger than the processId version (../../../../../../Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Intermediate/Shaders/WorkingDirectory/30300/).
+[2022.05.06-12.17.38:530][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/krisk/AppData/Local/Temp/UnrealShaderWorkingDir/321A286143E405B3F17257B8A9BD6D26/'.
+[2022.05.06-12.17.38:531][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2022.05.06-12.17.38:531][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2022.05.06-12.17.42:089][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2022.05.06-12.17.42:225][  0]LogDerivedDataCache: Loaded boot cache 0.13s 85MB C:/Users/krisk/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.05.06-12.17.42:225][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/krisk/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc
+[2022.05.06-12.17.42:225][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2022.05.06-12.17.42:225][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2022.05.06-12.17.42:225][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.05.06-12.17.42:225][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2022.05.06-12.17.42:254][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2022.05.06-12.17.42:254][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2022.05.06-12.17.42:254][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2022.05.06-12.17.42:299][  0]LogDerivedDataCache: Speed tests for C:/Users/krisk/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.04 seconds
+[2022.05.06-12.17.42:299][  0]LogDerivedDataCache: Display: Performance to C:/Users/krisk/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=1.57ms. RandomReadSpeed=75.41MBs, RandomWriteSpeed=78.63MBs. Assigned SpeedClass 'Fast'
+[2022.05.06-12.17.42:301][  0]LogDerivedDataCache: Using Local data cache path C:/Users/krisk/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2022.05.06-12.17.42:301][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2022.05.06-12.17.42:301][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2022.05.06-12.17.42:370][  0]LogSlate: Using FreeType 2.10.0
+[2022.05.06-12.17.42:394][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2022.05.06-12.17.42:498][  0]LogAssetRegistry: FAssetRegistry took 0.0197 seconds to start up
+[2022.05.06-12.17.42:995][  0]LogInit: Selected Device Profile: [Windows]
+[2022.05.06-12.17.42:995][  0]LogInit: Active device profile: [0000022392B7F200][0000022391821100 49] Windows
+[2022.05.06-12.17.42:995][  0]LogInit: Profiles: [0000022392B7F200][0000022391821100 49] Windows, [0000022392B59100][0000022391829280 49] WindowsNoEditor, [0000022392B7D200][000002239182D400 49] WindowsServer, [0000022392B5AB00][0000022391831580 49] WindowsClient, [0000022392B7EC00][00000223918256C0 49] IOS, [0000022392B59600][0000022391835800 49] iPadAir, [0000022392B7D700][0000022391839940 49] iPadAir2, [0000022392B18800][0000022391845C00 49] IPadPro, [0000022392B18900][0000022391841C40 49] iPadAir3, [0000022392B7E700][0000022391848100 49] iPadAir4, [0000022392B1B100][000002239184C280 49] iPadMini2, [0000022392B7DA00][0000022391850400 49] iPadMini3, [0000022392B1A000][0000022391854580 49] iPadMini4, [0000022392B7ED00][0000022391858700 49] iPadMini5, [0000022392B59900][00000223918609C0 49] iPhone6, [0000022392B03F00][000002239185CA00 49] iPodTouch6, [0000022392B5B300][0000022391868CC0 49] iPhone7, [0000022392B1B200][0000022391864D00 49] iPodTouch7, [0000022392B01300][000002239186CE80 49] iPhone5S, [0000022392B18B00][0000022391871000 49] iPhone6Plus, [0000022392B02800][0000022391875180 49] iPhone6S, [0000022392B1AC00][0000022391879300 49] iPhone6SPlus, [0000022392B01800][000002239187D480 49] iPhone7Plus, [0000022392B1B300][0000022391881600 49] iPhoneSE, [0000022392B02900][000002239183D740 49] iPhone8, [0000022392B1AE00][0000022391885880 49] iPhone8Plus, [0000022392B01600][00000223918899C0 49] iPhoneX, [0000022392B1BF00][00000223938A1B40 49] iPhoneXS, [0000022392B00900][00000223938A5CC0 49] iPhoneXSMax, [0000022392B1BA00][00000223938A8180 49] iPhoneXR, [0000022392B01200][00000223938AC300 49] iPhone11, [0000022392B19F00][00000223938B0480 49] iPhone11Pro, [0000022392B02C00][00000223938B4600 49] iPhone11ProMax, [0000022392B1B700][00000223938B8780 49] iPhoneSE2, [0000022392B01E00][00000223938BC900 49] iPhone12Mini, [0000022392B1A300][00000223938C0A80 49] iPhone12, [0000022392B01F00][00000223938C4C00 49] iPhone12Pro, [0000022392B1B400][00000223938C8D80 49] iPhone12ProMax, [0000022392B00200][00000223938CCF00 49] iPadPro105, [0000022392B1B000][00000223938D1080 49] iPadPro129, [0000022392B00E00][00000223938D5200 49] iPadPro97, [0000022392B1A700][00000223938D9380 49] iPadPro2_129, [0000022392B02500][00000223938DD500 49] iPad5, [0000022392B18C00][00000223938E1680 49] iPad6, [0000022392B00300][000002239188D7C0 49] iPad7, [0000022392B18E00][00000223938E5900 49] iPad8, [0000022392B03400][00000223938E9A40 49] iPadPro11, [0000022392B18400][00000223938EDB80 49] iPadPro2_11, [0000022392B00600][00000223938F5D00 49] iPadPro3_129, [0000022392B1A800][00000223938F81C0 49] iPadPro4_129, [0000022392B03D00][00000223938FC340 49] AppleTV, [0000022392B1AB00][00000223939004C0 49] AppleTV4K, [0000022392B02D00][0000022393904640 49] TVOS, [0000022392B19800][00000223939087C0 49] Mac, [0000022392B01100][000002239390C940 49] MacClient, [0000022392B18A00][0000022393910AC0 49] MacNoEditor, [0000022392B03600][0000022393914C40 49] MacServer, [0000022392B19A00][0000022393918DC0 49] Linux, [0000022392B03000][000002239391CF40 49] LinuxAArch64, [0000022392B02400][00000223939210C0 49] LinuxNoEditor, [0000022392B58400][0000022393925240 49] LinuxAArch64NoEditor, [0000022392BDC700][00000223939293C0 49] LinuxClient, [0000022392B58F00][000002239392D540 49] LinuxAArch64Client, [0000022392BDC500][00000223939316C0 49] LinuxServer, [0000022392B5AF00][00000223938F1800 49] LinuxAArch64Server, [0000022392BDCA00][0000022393935940 49] Android, [0000022392B5A400][0000022393939A80 49] Android_Low, [0000022392BDC300][000002239393DBC0 49] Android_Mid, [0000022392B59800][0000022393945D40 49] Android_High, [0000022392BDD000][0000022393948200 49] Android_Default, [0000022392B5BF00][000002239394C380 49] Android_Adreno4xx, [0000022392BDC800][0000022393950500 49] Android_Adreno5xx_Low, [0000022392B5A300][0000022393954680 49] Android_Adreno5xx, [0000022392B19400][0000022393958800 49] Android_Adreno6xx, [0000022392B58900][000002239395C980 49] Android_Adreno6xx_Vulkan, [0000022392B1A600][0000022393960B00 49] Android_Mali_T6xx, [0000022392B58C00][0000022393964C80 49] Android_Mali_T7xx, [0000022392B18D00][0000022393968E00 49] Android_Mali_T8xx, [0000022392B58B00][000002239396CF80 49] Android_Mali_G71, [0000022392B1B800][0000022393971100 49] Android_Mali_G72, [0000022392B5A800][0000022393975280 49] Android_Mali_G72_Vulkan, [0000022392B19000][0000022393979400 49] Android_Mali_G76, [0000022392B59500][000002239397D580 49] Android_Mali_G76_Vulkan, [0000022392B1A200][0000022393981700 49] Android_Mali_G77, [0000022392B59300][0000022393985880 49] Android_Mali_G77_Vulkan, [0000022392B1BC00][00000223939419C0 49] Android_Vulkan_SM5, [0000022392B59C00][0000022393989B00 49] Android_PowerVR_G6xxx, [0000022392B1A100][000002239398DC40 49] Android_PowerVR_GT7xxx, [0000022392B59B00][0000022393994100 49] Android_PowerVR_GE8xxx, [0000022392B1B600][0000022393998280 49] Android_PowerVR_GM9xxx, [0000022392B58600][000002239399C400 49] Android_PowerVR_GM9xxx_Vulkan, [0000022392B19200][00000223939A0580 49] Android_TegraK1, [0000022392B59F00][00000223939A4700 49] Android_Unknown_Vulkan, [0000022392B1B500][00000223939A8880 49] Lumin, [0000022392B58300][00000223939ACA00 49] Lumin_Desktop, [0000022392B19600][00000223939B0B80 49] HoloLens, 
+[2022.05.06-12.17.43:297][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2022.05.06-12.17.43:297][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2022.05.06-12.17.43:297][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2022.05.06-12.17.43:297][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2022.05.06-12.17.43:297][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2022.05.06-12.17.43:370][  0]LogNetVersion: PlayervsAI 1.0.0, NetCL: 14830424, EngineNetVer: 16, GameNetVer: 0 (Checksum: 567637585)
+[2022.05.06-12.17.44:798][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2022.05.06-12.17.44:876][  0]LogPackageLocalizationCache: Processed 22 localized package path(s) for 1 prioritized culture(s) in 0.076433 seconds
+[2022.05.06-12.17.44:884][  0]LogUObjectArray: 16831 objects as part of root set at end of initial load.
+[2022.05.06-12.17.44:884][  0]LogUObjectAllocator: 4209728 out of 0 bytes used by permanent object pool.
+[2022.05.06-12.17.44:884][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2022.05.06-12.17.46:025][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2022.05.06-12.17.46:036][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2022.05.06-12.17.46:242][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter': Can't find file.
+[2022.05.06-12.17.46:242][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter': Can't find file.
+[2022.05.06-12.17.46:242][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C'
+[2022.05.06-12.17.46:242][  0]Error: CDO Constructor (TP_ThirdPersonGameMode): Failed to find /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C
+
+[2022.05.06-12.17.46:243][  0]LogUObjectBase: Warning: -------------- Default Property warnings and errors:
+[2022.05.06-12.17.46:243][  0]LogUObjectBase: Warning: Error: CDO Constructor (TP_ThirdPersonGameMode): Failed to find /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C
+
+[2022.05.06-12.17.47:888][  0]Message dialog closed, result: Ok, title: Message, text: Default Property warnings and errors:
+Error: CDO Constructor (TP_ThirdPersonGameMode): Failed to find /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C
+
+
+[2022.05.06-12.17.48:048][  0]SourceControl: Source control is disabled
+[2022.05.06-12.17.48:049][  0]SourceControl: Source control is disabled
+[2022.05.06-12.17.48:597][  0]LogUProjectInfo: Found projects:
+[2022.05.06-12.17.49:102][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2022.05.06-12.17.49:142][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.05.06-12.17.49:143][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2022.05.06-12.17.49:288][  0]LogCollectionManager: Loaded 0 collections in 0.002050 seconds
+[2022.05.06-12.17.49:350][  0]LogFileCache: Scanning file cache for directory 'C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Saved/Collections/' took 0.00s
+[2022.05.06-12.17.49:350][  0]LogFileCache: Scanning file cache for directory 'C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Content/Developers/krisk/Collections/' took 0.00s
+[2022.05.06-12.17.49:350][  0]LogFileCache: Scanning file cache for directory 'C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Content/Collections/' took 0.00s
+[2022.05.06-12.17.49:350][  0]LogOcInput: OculusInput pre-init called
+[2022.05.06-12.17.49:372][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2022.05.06-12.17.49:372][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2022.05.06-12.17.49:508][  0]LogEngine: Initializing Engine...
+[2022.05.06-12.17.49:510][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2022.05.06-12.17.49:510][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2022.05.06-12.17.49:513][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.001 s
+[2022.05.06-12.17.49:852][  0]LogInit: Initializing FReadOnlyCVARCache
+[2022.05.06-12.17.49:878][  0]LogAIModule: Creating AISystem for world Untitled
+[2022.05.06-12.17.49:881][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2022.05.06-12.17.49:890][  0]LogAudio: Display: Audio Device Manager Initialized
+[2022.05.06-12.17.49:890][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2022.05.06-12.17.49:891][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.05.06-12.17.49:891][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.05.06-12.17.49:891][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.05.06-12.17.49:891][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.05.06-12.17.49:891][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.05.06-12.17.49:891][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.05.06-12.17.49:891][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.05.06-12.17.49:891][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.05.06-12.17.49:893][  0]LogAudio: Display: Using built-in audio occlusion.
+[2022.05.06-12.17.49:893][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2022.05.06-12.17.49:927][  0]LogAudioMixer: Display: 0: FrontLeft
+[2022.05.06-12.17.49:927][  0]LogAudioMixer: Display: 1: FrontRight
+[2022.05.06-12.17.49:927][  0]LogAudioMixer: Display: 2: FrontCenter
+[2022.05.06-12.17.49:927][  0]LogAudioMixer: Display: 3: LowFrequency
+[2022.05.06-12.17.49:927][  0]LogAudioMixer: Display: 4: BackLeft
+[2022.05.06-12.17.49:928][  0]LogAudioMixer: Display: 5: BackRight
+[2022.05.06-12.17.49:928][  0]LogAudioMixer: Display: 6: SideLeft
+[2022.05.06-12.17.49:928][  0]LogAudioMixer: Display: 7: SideRight
+[2022.05.06-12.17.50:009][  0]LogAudioMixer: Display: Using Audio Device Speakers (7.1 Surround Sound)
+[2022.05.06-12.17.50:014][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.05.06-12.17.50:040][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.05.06-12.17.50:041][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.05.06-12.17.50:042][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.05.06-12.17.50:043][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.05.06-12.17.50:043][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2022.05.06-12.17.50:046][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.05.06-12.17.50:046][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.05.06-12.17.50:046][  0]LogInit: FAudioDevice initialized.
+[2022.05.06-12.17.50:046][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2022.05.06-12.17.50:047][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2022.05.06-12.17.50:105][  0]LogDerivedDataCache: Saved boot cache 0.06s 77MB C:/Users/krisk/AppData/Local/UnrealEngine/4.26/DerivedDataCache/Boot.ddc.
+[2022.05.06-12.17.50:111][  0]LogInit: Texture streaming: Enabled
+[2022.05.06-12.17.50:137][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.26.2-15973114+++UE4+Release-4.26
+[2022.05.06-12.17.50:144][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2022.05.06-12.17.50:145][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2022.05.06-12.17.50:147][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2022.05.06-12.17.50:185][  0]LogInit: Transaction tracking system initialized
+[2022.05.06-12.17.50:245][  0]BlueprintLog: New page: Editor Load
+[2022.05.06-12.17.50:442][  0]LocalizationService: Localization service is disabled
+[2022.05.06-12.17.50:513][  0]TimingProfiler: Initialize
+[2022.05.06-12.17.50:515][  0]TimingProfiler: OnSessionChanged
+[2022.05.06-12.17.50:515][  0]LoadingProfiler: Initialize
+[2022.05.06-12.17.50:516][  0]LoadingProfiler: OnSessionChanged
+[2022.05.06-12.17.50:516][  0]NetworkingProfiler: Initialize
+[2022.05.06-12.17.50:516][  0]NetworkingProfiler: OnSessionChanged
+[2022.05.06-12.17.50:516][  0]MemoryProfiler: Initialize
+[2022.05.06-12.17.50:516][  0]MemoryProfiler: OnSessionChanged
+[2022.05.06-12.17.51:039][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2022.05.06-12.17.51:039][  0]LogCook: Display: Mobile HDR setting 1
+[2022.05.06-12.17.51:367][  0]LogFileCache: Scanning file cache for directory 'C:/Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Content/' took 0.01s
+[2022.05.06-12.17.51:587][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2022.05.06-12.17.51:593][  0]LogUnrealEdMisc: Loading editor; pre map load, took 20.510
+[2022.05.06-12.17.51:594][  0]Cmd: MAP LOAD FILE="../../../../../../Users/krisk/Unreal_Projects/Final-Year-Project/PlayervsAI/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2022.05.06-12.17.51:603][  0]LightingResults: New page: Lighting Build
+[2022.05.06-12.17.51:612][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2022.05.06-12.17.51:617][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.05.06-12.17.51:619][  0]MapCheck: New page: Map Check
+[2022.05.06-12.17.51:619][  0]LightingResults: New page: Lighting Build
+[2022.05.06-12.17.51:632][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.01ms
+[2022.05.06-12.17.52:942][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'FirstPersonExampleMap'.
+[2022.05.06-12.17.52:944][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2022.05.06-12.17.52:987][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2022.05.06-12.17.53:002][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2022.05.06-12.17.53:003][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2022.05.06-12.17.53:003][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.223ms to complete.
+[2022.05.06-12.17.53:003][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 1.410
+[2022.05.06-12.17.53:026][  0]LogUnrealEdMisc: Total Editor Startup Time, took 21.943
+[2022.05.06-12.17.53:194][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.05.06-12.17.53:203][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.05.06-12.17.53:212][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.05.06-12.17.53:220][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.05.06-12.17.53:258][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0117 seconds. Added 3619 classes and 862 folders.
+[2022.05.06-12.17.53:264][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2022.05.06-12.17.53:279][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.05.06-12.17.53:279][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:279][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.05.06-12.17.53:279][  0]LogPakFile: OnPakFileMounted2Time == 0.000013
+[2022.05.06-12.17.53:289][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.05.06-12.17.53:289][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:290][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.05.06-12.17.53:290][  0]LogPakFile: OnPakFileMounted2Time == 0.000020
+[2022.05.06-12.17.53:296][  0]LogPakFile: PakFile PrimaryIndexSize=191
+[2022.05.06-12.17.53:296][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:297][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
+[2022.05.06-12.17.53:297][  0]LogPakFile: OnPakFileMounted2Time == 0.000026
+[2022.05.06-12.17.53:303][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.05.06-12.17.53:304][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:304][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.05.06-12.17.53:304][  0]LogPakFile: OnPakFileMounted2Time == 0.000032
+[2022.05.06-12.17.53:310][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.05.06-12.17.53:311][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:311][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.05.06-12.17.53:311][  0]LogPakFile: OnPakFileMounted2Time == 0.000039
+[2022.05.06-12.17.53:318][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.05.06-12.17.53:318][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:318][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.05.06-12.17.53:318][  0]LogPakFile: OnPakFileMounted2Time == 0.000045
+[2022.05.06-12.17.53:324][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.05.06-12.17.53:324][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:324][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.05.06-12.17.53:324][  0]LogPakFile: OnPakFileMounted2Time == 0.000050
+[2022.05.06-12.17.53:331][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.05.06-12.17.53:331][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:331][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.05.06-12.17.53:331][  0]LogPakFile: OnPakFileMounted2Time == 0.000057
+[2022.05.06-12.17.53:341][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.05.06-12.17.53:341][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:341][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.05.06-12.17.53:341][  0]LogPakFile: OnPakFileMounted2Time == 0.000063
+[2022.05.06-12.17.53:349][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2022.05.06-12.17.53:349][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:349][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2022.05.06-12.17.53:349][  0]LogPakFile: OnPakFileMounted2Time == 0.000069
+[2022.05.06-12.17.53:355][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2022.05.06-12.17.53:355][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:355][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2022.05.06-12.17.53:355][  0]LogPakFile: OnPakFileMounted2Time == 0.000075
+[2022.05.06-12.17.53:363][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.05.06-12.17.53:363][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:363][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.05.06-12.17.53:363][  0]LogPakFile: OnPakFileMounted2Time == 0.000082
+[2022.05.06-12.17.53:370][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.05.06-12.17.53:370][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:370][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.05.06-12.17.53:371][  0]LogPakFile: OnPakFileMounted2Time == 0.000089
+[2022.05.06-12.17.53:377][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.05.06-12.17.53:377][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:377][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.05.06-12.17.53:377][  0]LogPakFile: OnPakFileMounted2Time == 0.000095
+[2022.05.06-12.17.53:384][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2022.05.06-12.17.53:384][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:384][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2022.05.06-12.17.53:384][  0]LogPakFile: OnPakFileMounted2Time == 0.000101
+[2022.05.06-12.17.53:393][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.05.06-12.17.53:393][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:393][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.05.06-12.17.53:393][  0]LogPakFile: OnPakFileMounted2Time == 0.000107
+[2022.05.06-12.17.53:400][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2022.05.06-12.17.53:401][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:401][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2022.05.06-12.17.53:401][  0]LogPakFile: OnPakFileMounted2Time == 0.000113
+[2022.05.06-12.17.53:408][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.05.06-12.17.53:408][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:409][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.05.06-12.17.53:409][  0]LogPakFile: OnPakFileMounted2Time == 0.000118
+[2022.05.06-12.17.53:416][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.05.06-12.17.53:416][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:416][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.05.06-12.17.53:416][  0]LogPakFile: OnPakFileMounted2Time == 0.000124
+[2022.05.06-12.17.53:427][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.05.06-12.17.53:427][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:427][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.05.06-12.17.53:427][  0]LogPakFile: OnPakFileMounted2Time == 0.000131
+[2022.05.06-12.17.53:433][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2022.05.06-12.17.53:434][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:434][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2022.05.06-12.17.53:434][  0]LogPakFile: OnPakFileMounted2Time == 0.000136
+[2022.05.06-12.17.53:440][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2022.05.06-12.17.53:441][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:441][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2022.05.06-12.17.53:441][  0]LogPakFile: OnPakFileMounted2Time == 0.000142
+[2022.05.06-12.17.53:448][  0]LogPakFile: PakFile PrimaryIndexSize=186
+[2022.05.06-12.17.53:448][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:448][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
+[2022.05.06-12.17.53:448][  0]LogPakFile: OnPakFileMounted2Time == 0.000147
+[2022.05.06-12.17.53:455][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2022.05.06-12.17.53:455][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:455][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2022.05.06-12.17.53:455][  0]LogPakFile: OnPakFileMounted2Time == 0.000153
+[2022.05.06-12.17.53:462][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2022.05.06-12.17.53:462][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:462][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2022.05.06-12.17.53:462][  0]LogPakFile: OnPakFileMounted2Time == 0.000159
+[2022.05.06-12.17.53:468][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2022.05.06-12.17.53:469][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2022.05.06-12.17.53:469][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2022.05.06-12.17.53:469][  0]LogPakFile: OnPakFileMounted2Time == 0.000166
+[2022.05.06-12.17.53:671][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2022.05.06-12.17.53:680][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 0 folders.
+[2022.05.06-12.17.53:862][  0]LogSlate: Took 0.006250 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2022.05.06-12.17.53:875][  0]LogSlate: Took 0.008641 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2022.05.06-12.17.53:887][  0]LogSlate: Took 0.007224 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2022.05.06-12.17.54:077][  0]LogRenderer: Reallocating scene render targets to support 1680x768 Format 10 NumSamples 1 (Frame:1).
+[2022.05.06-12.17.54:307][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2022.05.06-12.17.54:308][  0]LogLoad: (Engine Initialization) Total time: 23.22 seconds
+[2022.05.06-12.17.54:308][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2022.05.06-12.17.54:308][  0]LogInit: First time updating LLM stats...
+[2022.05.06-12.17.54:358][  0]LogAssetRegistry: Asset discovery search completed in 11.8644 seconds
+[2022.05.06-12.17.54:360][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000005 seconds (updated 0 objects)
+[2022.05.06-12.17.54:364][  0]LogContentStreaming: Texture pool size now 400 MB
+[2022.05.06-12.17.54:412][  1]LogRenderer: Reallocating scene render targets to support 1680x784 Format 10 NumSamples 1 (Frame:3).
+[2022.05.06-12.18.05:486][184]LogTemp: Repeating last play command: Selected Viewport
+[2022.05.06-12.18.05:494][184]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2022.05.06-12.18.05:498][184]PIE: New page: PIE session: FirstPersonExampleMap (6 May 2022, 14:18:05)
+[2022.05.06-12.18.05:503][184]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2022.05.06-12.18.05:506][184]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2022.05.06-12.18.05:507][184]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2022.05.06-12.18.05:529][184]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022460s)
+[2022.05.06-12.18.05:532][184]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2022.05.06-12.18.05:532][184]LogPlayLevel: PIE: World Init took: (0.002818s)
+[2022.05.06-12.18.05:532][184]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.025841s)
+[2022.05.06-12.18.05:540][184]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2022.05.06-12.18.05:543][184]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2022.05.06-12.18.05:544][184]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2022.05.06-12.18.05:544][184]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2022.05.06-12.18.05:544][184]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2022.05.06-12.18.05:544][184]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2022.05.06-12.18.05:544][184]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2022.05.06-12.18.05:544][184]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2022.05.06-12.18.05:544][184]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2022.05.06-12.18.05:544][184]LogAudio: Display: AudioDevice MaxSources: 32
+[2022.05.06-12.18.05:545][184]LogAudio: Display: Using built-in audio occlusion.
+[2022.05.06-12.18.05:545][184]LogAudioMixer: Display: Initializing audio mixer.
+[2022.05.06-12.18.05:549][184]LogAudioMixer: Display: 0: FrontLeft
+[2022.05.06-12.18.05:549][184]LogAudioMixer: Display: 1: FrontRight
+[2022.05.06-12.18.05:550][184]LogAudioMixer: Display: 2: FrontCenter
+[2022.05.06-12.18.05:550][184]LogAudioMixer: Display: 3: LowFrequency
+[2022.05.06-12.18.05:550][184]LogAudioMixer: Display: 4: BackLeft
+[2022.05.06-12.18.05:550][184]LogAudioMixer: Display: 5: BackRight
+[2022.05.06-12.18.05:550][184]LogAudioMixer: Display: 6: SideLeft
+[2022.05.06-12.18.05:550][184]LogAudioMixer: Display: 7: SideRight
+[2022.05.06-12.18.05:598][184]LogAudioMixer: Display: Using Audio Device Speakers (7.1 Surround Sound)
+[2022.05.06-12.18.05:598][184]LogAudioMixer: Display: Initializing Sound Submixes...
+[2022.05.06-12.18.05:599][184]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2022.05.06-12.18.05:599][184]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2022.05.06-12.18.05:599][184]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2022.05.06-12.18.05:599][184]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2022.05.06-12.18.05:599][184]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192
+[2022.05.06-12.18.05:616][184]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2022.05.06-12.18.05:616][184]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2022.05.06-12.18.05:616][184]LogInit: FAudioDevice initialized.
+[2022.05.06-12.18.05:616][184]LogAudio: Display: Audio Device (ID: 2) registered with world 'FirstPersonExampleMap'.
+[2022.05.06-12.18.05:674][184]LogLoad: Game class is 'BP_PlayerVsAIMode_C'
+[2022.05.06-12.18.05:679][184]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 0) at 2022.05.06-13.18.05
+[2022.05.06-12.18.05:687][184]LogWorld: Bringing up level for play took: 0.010408
+[2022.05.06-12.18.05:687][184]LogOnline: OSS: Creating online subsystem instance for: :Context_6
+[2022.05.06-12.18.05:696][184]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2022.05.06-12.18.05:701][184]PIE: Server logged in
+[2022.05.06-12.18.05:703][184]PIE: Play in editor total start time 0.21 seconds.
+[2022.05.06-12.18.05:922][203]LogTemp: Warning: VAL: -0.777276
+[2022.05.06-12.18.05:923][203]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.691045
+[2022.05.06-12.18.05:923][203]LogTemp: Warning: VAL AT INTERRECOIL: -0.691045
+[2022.05.06-12.18.05:943][204]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.529978
+[2022.05.06-12.18.05:943][204]LogTemp: Warning: VAL AT INTERRECOIL: -0.529978
+[2022.05.06-12.18.05:953][205]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.474170
+[2022.05.06-12.18.05:953][205]LogTemp: Warning: VAL AT INTERRECOIL: -0.474170
+[2022.05.06-12.18.05:961][206]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.433564
+[2022.05.06-12.18.05:962][206]LogTemp: Warning: VAL AT INTERRECOIL: -0.433564
+[2022.05.06-12.18.05:970][207]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.389704
+[2022.05.06-12.18.05:971][207]LogTemp: Warning: VAL AT INTERRECOIL: -0.389704
+[2022.05.06-12.18.05:979][208]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.355392
+[2022.05.06-12.18.05:979][208]LogTemp: Warning: VAL AT INTERRECOIL: -0.355392
+[2022.05.06-12.18.05:988][209]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.325158
+[2022.05.06-12.18.05:988][209]LogTemp: Warning: VAL AT INTERRECOIL: -0.325158
+[2022.05.06-12.18.05:997][210]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.294333
+[2022.05.06-12.18.05:998][210]LogTemp: Warning: VAL AT INTERRECOIL: -0.294333
+[2022.05.06-12.18.06:006][211]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.267680
+[2022.05.06-12.18.06:006][211]LogTemp: Warning: VAL AT INTERRECOIL: -0.267680
+[2022.05.06-12.18.06:014][212]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.245022
+[2022.05.06-12.18.06:015][212]LogTemp: Warning: VAL AT INTERRECOIL: -0.245022
+[2022.05.06-12.18.06:023][213]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.223279
+[2022.05.06-12.18.06:023][213]LogTemp: Warning: VAL AT INTERRECOIL: -0.223279
+[2022.05.06-12.18.06:031][214]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.204427
+[2022.05.06-12.18.06:032][214]LogTemp: Warning: VAL AT INTERRECOIL: -0.204427
+[2022.05.06-12.18.06:040][215]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.187186
+[2022.05.06-12.18.06:040][215]LogTemp: Warning: VAL AT INTERRECOIL: -0.187186
+[2022.05.06-12.18.06:048][216]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.171414
+[2022.05.06-12.18.06:048][216]LogTemp: Warning: VAL AT INTERRECOIL: -0.171414
+[2022.05.06-12.18.06:057][217]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.156984
+[2022.05.06-12.18.06:057][217]LogTemp: Warning: VAL AT INTERRECOIL: -0.156984
+[2022.05.06-12.18.06:065][218]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.143780
+[2022.05.06-12.18.06:065][218]LogTemp: Warning: VAL AT INTERRECOIL: -0.143780
+[2022.05.06-12.18.06:073][219]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.131696
+[2022.05.06-12.18.06:073][219]LogTemp: Warning: VAL AT INTERRECOIL: -0.131696
+[2022.05.06-12.18.06:082][220]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.120520
+[2022.05.06-12.18.06:082][220]LogTemp: Warning: VAL AT INTERRECOIL: -0.120520
+[2022.05.06-12.18.06:090][221]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.110403
+[2022.05.06-12.18.06:090][221]LogTemp: Warning: VAL AT INTERRECOIL: -0.110403
+[2022.05.06-12.18.06:099][222]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.100866
+[2022.05.06-12.18.06:099][222]LogTemp: Warning: VAL AT INTERRECOIL: -0.100866
+[2022.05.06-12.18.06:107][223]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.092410
+[2022.05.06-12.18.06:107][223]LogTemp: Warning: VAL AT INTERRECOIL: -0.092410
+[2022.05.06-12.18.06:115][224]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.084666
+[2022.05.06-12.18.06:115][224]LogTemp: Warning: VAL AT INTERRECOIL: -0.084666
+[2022.05.06-12.18.06:123][225]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.077575
+[2022.05.06-12.18.06:124][225]LogTemp: Warning: VAL AT INTERRECOIL: -0.077575
+[2022.05.06-12.18.06:132][226]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.071081
+[2022.05.06-12.18.06:132][226]LogTemp: Warning: VAL AT INTERRECOIL: -0.071081
+[2022.05.06-12.18.06:140][227]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.065132
+[2022.05.06-12.18.06:141][227]LogTemp: Warning: VAL AT INTERRECOIL: -0.065132
+[2022.05.06-12.18.06:149][228]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.059683
+[2022.05.06-12.18.06:149][228]LogTemp: Warning: VAL AT INTERRECOIL: -0.059683
+[2022.05.06-12.18.06:158][229]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.054273
+[2022.05.06-12.18.06:158][229]LogTemp: Warning: VAL AT INTERRECOIL: -0.054273
+[2022.05.06-12.18.06:165][230]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.049735
+[2022.05.06-12.18.06:166][230]LogTemp: Warning: VAL AT INTERRECOIL: -0.049735
+[2022.05.06-12.18.06:174][231]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.045579
+[2022.05.06-12.18.06:174][231]LogTemp: Warning: VAL AT INTERRECOIL: -0.045579
+[2022.05.06-12.18.06:182][232]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.041770
+[2022.05.06-12.18.06:183][232]LogTemp: Warning: VAL AT INTERRECOIL: -0.041770
+[2022.05.06-12.18.06:191][233]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.038280
+[2022.05.06-12.18.06:191][233]LogTemp: Warning: VAL AT INTERRECOIL: -0.038280
+[2022.05.06-12.18.06:200][234]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.034714
+[2022.05.06-12.18.06:200][234]LogTemp: Warning: VAL AT INTERRECOIL: -0.034714
+[2022.05.06-12.18.06:209][235]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.031429
+[2022.05.06-12.18.06:209][235]LogTemp: Warning: VAL AT INTERRECOIL: -0.031429
+[2022.05.06-12.18.06:218][236]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.028805
+[2022.05.06-12.18.06:218][236]LogTemp: Warning: VAL AT INTERRECOIL: -0.028805
+[2022.05.06-12.18.06:226][237]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.026401
+[2022.05.06-12.18.06:226][237]LogTemp: Warning: VAL AT INTERRECOIL: -0.026401
+[2022.05.06-12.18.06:235][238]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.024197
+[2022.05.06-12.18.06:235][238]LogTemp: Warning: VAL AT INTERRECOIL: -0.024197
+[2022.05.06-12.18.06:243][239]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.022178
+[2022.05.06-12.18.06:243][239]LogTemp: Warning: VAL AT INTERRECOIL: -0.022178
+[2022.05.06-12.18.06:251][240]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.020327
+[2022.05.06-12.18.06:252][240]LogTemp: Warning: VAL AT INTERRECOIL: -0.020327
+[2022.05.06-12.18.06:260][241]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.018631
+[2022.05.06-12.18.06:260][241]LogTemp: Warning: VAL AT INTERRECOIL: -0.018631
+[2022.05.06-12.18.06:268][242]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.017077
+[2022.05.06-12.18.06:268][242]LogTemp: Warning: VAL AT INTERRECOIL: -0.017077
+[2022.05.06-12.18.06:276][243]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.015652
+[2022.05.06-12.18.06:277][243]LogTemp: Warning: VAL AT INTERRECOIL: -0.015652
+[2022.05.06-12.18.06:285][244]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.014345
+[2022.05.06-12.18.06:285][244]LogTemp: Warning: VAL AT INTERRECOIL: -0.014345
+[2022.05.06-12.18.06:293][245]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.013148
+[2022.05.06-12.18.06:293][245]LogTemp: Warning: VAL AT INTERRECOIL: -0.013148
+[2022.05.06-12.18.06:301][246]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.012052
+[2022.05.06-12.18.06:301][246]LogTemp: Warning: VAL AT INTERRECOIL: -0.012052
+[2022.05.06-12.18.06:309][247]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.011047
+[2022.05.06-12.18.06:310][247]LogTemp: Warning: VAL AT INTERRECOIL: -0.011047
+[2022.05.06-12.18.06:318][248]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.010056
+[2022.05.06-12.18.06:319][248]LogTemp: Warning: VAL AT INTERRECOIL: -0.010056
+[2022.05.06-12.18.06:327][249]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.009217
+[2022.05.06-12.18.06:327][249]LogTemp: Warning: VAL AT INTERRECOIL: -0.009217
+[2022.05.06-12.18.06:336][250]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.008449
+[2022.05.06-12.18.06:336][250]LogTemp: Warning: VAL AT INTERRECOIL: -0.008449
+[2022.05.06-12.18.06:344][251]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.007710
+[2022.05.06-12.18.06:345][251]LogTemp: Warning: VAL AT INTERRECOIL: -0.007710
+[2022.05.06-12.18.06:353][252]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.007067
+[2022.05.06-12.18.06:353][252]LogTemp: Warning: VAL AT INTERRECOIL: -0.007067
+[2022.05.06-12.18.06:362][253]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.006387
+[2022.05.06-12.18.06:362][253]LogTemp: Warning: VAL AT INTERRECOIL: -0.006387
+[2022.05.06-12.18.06:371][254]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.005855
+[2022.05.06-12.18.06:371][254]LogTemp: Warning: VAL AT INTERRECOIL: -0.005855
+[2022.05.06-12.18.06:380][255]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.005326
+[2022.05.06-12.18.06:380][255]LogTemp: Warning: VAL AT INTERRECOIL: -0.005326
+[2022.05.06-12.18.06:389][256]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.004875
+[2022.05.06-12.18.06:389][256]LogTemp: Warning: VAL AT INTERRECOIL: -0.004875
+[2022.05.06-12.18.06:399][257]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.004396
+[2022.05.06-12.18.06:399][257]LogTemp: Warning: VAL AT INTERRECOIL: -0.004396
+[2022.05.06-12.18.06:407][258]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.004009
+[2022.05.06-12.18.06:408][258]LogTemp: Warning: VAL AT INTERRECOIL: -0.004009
+[2022.05.06-12.18.06:417][259]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.003649
+[2022.05.06-12.18.06:417][259]LogTemp: Warning: VAL AT INTERRECOIL: -0.003649
+[2022.05.06-12.18.06:425][260]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.003341
+[2022.05.06-12.18.06:425][260]LogTemp: Warning: VAL AT INTERRECOIL: -0.003341
+[2022.05.06-12.18.06:435][261]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.003006
+[2022.05.06-12.18.06:435][261]LogTemp: Warning: VAL AT INTERRECOIL: -0.003006
+[2022.05.06-12.18.06:445][262]LogTemp: Warning: VAL: 2.650000
+[2022.05.06-12.18.06:445][262]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.412583
+[2022.05.06-12.18.06:445][262]LogTemp: Warning: VAL AT INTERRECOIL: 2.412583
+[2022.05.06-12.18.06:452][263]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.203019
+[2022.05.06-12.18.06:452][263]LogTemp: Warning: VAL AT INTERRECOIL: 2.203019
+[2022.05.06-12.18.06:460][264]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.018071
+[2022.05.06-12.18.06:460][264]LogTemp: Warning: VAL AT INTERRECOIL: 2.018071
+[2022.05.06-12.18.06:468][265]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.849054
+[2022.05.06-12.18.06:468][265]LogTemp: Warning: VAL AT INTERRECOIL: 1.849054
+[2022.05.06-12.18.06:477][266]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.681156
+[2022.05.06-12.18.06:477][266]LogTemp: Warning: VAL AT INTERRECOIL: 1.681156
+[2022.05.06-12.18.06:487][267]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.522554
+[2022.05.06-12.18.06:487][267]LogTemp: Warning: VAL AT INTERRECOIL: 1.522554
+[2022.05.06-12.18.06:496][268]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.385208
+[2022.05.06-12.18.06:496][268]LogTemp: Warning: VAL AT INTERRECOIL: 1.385208
+[2022.05.06-12.18.06:505][269]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.269384
+[2022.05.06-12.18.06:505][269]LogTemp: Warning: VAL AT INTERRECOIL: 1.269384
+[2022.05.06-12.18.06:513][270]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.155662
+[2022.05.06-12.18.06:514][270]LogTemp: Warning: VAL AT INTERRECOIL: 1.155662
+[2022.05.06-12.18.06:522][271]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.059086
+[2022.05.06-12.18.06:522][271]LogTemp: Warning: VAL AT INTERRECOIL: 1.059086
+[2022.05.06-12.18.06:530][272]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.970603
+[2022.05.06-12.18.06:530][272]LogTemp: Warning: VAL AT INTERRECOIL: 0.970603
+[2022.05.06-12.18.06:539][273]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.884296
+[2022.05.06-12.18.06:539][273]LogTemp: Warning: VAL AT INTERRECOIL: 0.884296
+[2022.05.06-12.18.06:548][274]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.810448
+[2022.05.06-12.18.06:548][274]LogTemp: Warning: VAL AT INTERRECOIL: 0.810448
+[2022.05.06-12.18.06:557][275]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.734175
+[2022.05.06-12.18.06:557][275]LogTemp: Warning: VAL AT INTERRECOIL: 0.734175
+[2022.05.06-12.18.06:566][276]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.664951
+[2022.05.06-12.18.06:566][276]LogTemp: Warning: VAL AT INTERRECOIL: 0.664951
+[2022.05.06-12.18.06:574][277]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.609451
+[2022.05.06-12.18.06:575][277]LogTemp: Warning: VAL AT INTERRECOIL: 0.609451
+[2022.05.06-12.18.06:584][278]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.550792
+[2022.05.06-12.18.06:584][278]LogTemp: Warning: VAL AT INTERRECOIL: 0.550792
+[2022.05.06-12.18.06:592][279]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.504833
+[2022.05.06-12.18.06:593][279]LogTemp: Warning: VAL AT INTERRECOIL: 0.504833
+[2022.05.06-12.18.06:602][280]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.454960
+[2022.05.06-12.18.06:603][280]LogTemp: Warning: VAL AT INTERRECOIL: 0.454960
+[2022.05.06-12.18.06:612][281]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.411574
+[2022.05.06-12.18.06:612][281]LogTemp: Warning: VAL AT INTERRECOIL: 0.411574
+[2022.05.06-12.18.06:620][282]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.374761
+[2022.05.06-12.18.06:620][282]LogTemp: Warning: VAL AT INTERRECOIL: 0.374761
+[2022.05.06-12.18.06:628][283]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.343504
+[2022.05.06-12.18.06:628][283]LogTemp: Warning: VAL AT INTERRECOIL: 0.343504
+[2022.05.06-12.18.06:638][284]LogTemp: Warning: VAL: 1.911270
+[2022.05.06-12.18.06:639][284]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.746394
+[2022.05.06-12.18.06:639][284]LogTemp: Warning: VAL AT INTERRECOIL: 1.746394
+[2022.05.06-12.18.06:648][285]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.552091
+[2022.05.06-12.18.06:648][285]LogTemp: Warning: VAL AT INTERRECOIL: 1.552091
+[2022.05.06-12.18.06:657][286]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.401078
+[2022.05.06-12.18.06:657][286]LogTemp: Warning: VAL AT INTERRECOIL: 1.401078
+[2022.05.06-12.18.06:666][287]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.271935
+[2022.05.06-12.18.06:666][287]LogTemp: Warning: VAL AT INTERRECOIL: 1.271935
+[2022.05.06-12.18.06:674][288]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.163396
+[2022.05.06-12.18.06:674][288]LogTemp: Warning: VAL AT INTERRECOIL: 1.163396
+[2022.05.06-12.18.06:682][289]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.064304
+[2022.05.06-12.18.06:682][289]LogTemp: Warning: VAL AT INTERRECOIL: 1.064304
+[2022.05.06-12.18.06:691][290]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.972200
+[2022.05.06-12.18.06:691][290]LogTemp: Warning: VAL AT INTERRECOIL: 0.972200
+[2022.05.06-12.18.06:699][291]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.889677
+[2022.05.06-12.18.06:700][291]LogTemp: Warning: VAL AT INTERRECOIL: 0.889677
+[2022.05.06-12.18.06:708][292]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.814273
+[2022.05.06-12.18.06:708][292]LogTemp: Warning: VAL AT INTERRECOIL: 0.814273
+[2022.05.06-12.18.06:716][293]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.745354
+[2022.05.06-12.18.06:716][293]LogTemp: Warning: VAL AT INTERRECOIL: 0.745354
+[2022.05.06-12.18.06:725][294]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.682348
+[2022.05.06-12.18.06:725][294]LogTemp: Warning: VAL AT INTERRECOIL: 0.682348
+[2022.05.06-12.18.06:733][295]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.624735
+[2022.05.06-12.18.06:733][295]LogTemp: Warning: VAL AT INTERRECOIL: 0.624735
+[2022.05.06-12.18.06:741][296]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.572043
+[2022.05.06-12.18.06:741][296]LogTemp: Warning: VAL AT INTERRECOIL: 0.572043
+[2022.05.06-12.18.06:750][297]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.523843
+[2022.05.06-12.18.06:750][297]LogTemp: Warning: VAL AT INTERRECOIL: 0.523843
+[2022.05.06-12.18.06:758][298]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.479744
+[2022.05.06-12.18.06:758][298]LogTemp: Warning: VAL AT INTERRECOIL: 0.479744
+[2022.05.06-12.18.06:766][299]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.439391
+[2022.05.06-12.18.06:767][299]LogTemp: Warning: VAL AT INTERRECOIL: 0.439391
+[2022.05.06-12.18.06:775][300]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.402415
+[2022.05.06-12.18.06:775][300]LogTemp: Warning: VAL AT INTERRECOIL: 0.402415
+[2022.05.06-12.18.06:782][301]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.368615
+[2022.05.06-12.18.06:783][301]LogTemp: Warning: VAL AT INTERRECOIL: 0.368615
+[2022.05.06-12.18.06:790][302]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.337675
+[2022.05.06-12.18.06:791][302]LogTemp: Warning: VAL AT INTERRECOIL: 0.337675
+[2022.05.06-12.18.06:799][303]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.309348
+[2022.05.06-12.18.06:799][303]LogTemp: Warning: VAL AT INTERRECOIL: 0.309348
+[2022.05.06-12.18.06:807][304]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.283123
+[2022.05.06-12.18.06:808][304]LogTemp: Warning: VAL AT INTERRECOIL: 0.283123
+[2022.05.06-12.18.06:816][305]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.259398
+[2022.05.06-12.18.06:816][305]LogTemp: Warning: VAL AT INTERRECOIL: 0.259398
+[2022.05.06-12.18.06:824][306]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.237662
+[2022.05.06-12.18.06:824][306]LogTemp: Warning: VAL AT INTERRECOIL: 0.237662
+[2022.05.06-12.18.06:832][307]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.217764
+[2022.05.06-12.18.06:833][307]LogTemp: Warning: VAL AT INTERRECOIL: 0.217764
+[2022.05.06-12.18.06:841][308]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.199539
+[2022.05.06-12.18.06:842][308]LogTemp: Warning: VAL AT INTERRECOIL: 0.199539
+[2022.05.06-12.18.06:849][309]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.182845
+[2022.05.06-12.18.06:850][309]LogTemp: Warning: VAL AT INTERRECOIL: 0.182845
+[2022.05.06-12.18.06:858][310]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.167137
+[2022.05.06-12.18.06:859][310]LogTemp: Warning: VAL AT INTERRECOIL: 0.167137
+[2022.05.06-12.18.06:867][311]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.153163
+[2022.05.06-12.18.06:867][311]LogTemp: Warning: VAL AT INTERRECOIL: 0.153163
+[2022.05.06-12.18.06:874][312]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.140355
+[2022.05.06-12.18.06:875][312]LogTemp: Warning: VAL AT INTERRECOIL: 0.140355
+[2022.05.06-12.18.06:883][313]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.128255
+[2022.05.06-12.18.06:884][313]LogTemp: Warning: VAL AT INTERRECOIL: 0.128255
+[2022.05.06-12.18.06:892][314]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.117540
+[2022.05.06-12.18.06:892][314]LogTemp: Warning: VAL AT INTERRECOIL: 0.117540
+[2022.05.06-12.18.06:900][315]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.107722
+[2022.05.06-12.18.06:900][315]LogTemp: Warning: VAL AT INTERRECOIL: 0.107722
+[2022.05.06-12.18.06:908][316]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.098726
+[2022.05.06-12.18.06:908][316]LogTemp: Warning: VAL AT INTERRECOIL: 0.098726
+[2022.05.06-12.18.06:916][317]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.090482
+[2022.05.06-12.18.06:916][317]LogTemp: Warning: VAL AT INTERRECOIL: 0.090482
+[2022.05.06-12.18.06:926][318]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.082928
+[2022.05.06-12.18.06:926][318]LogTemp: Warning: VAL AT INTERRECOIL: 0.082928
+[2022.05.06-12.18.06:933][319]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.075653
+[2022.05.06-12.18.06:934][319]LogTemp: Warning: VAL AT INTERRECOIL: 0.075653
+[2022.05.06-12.18.06:942][320]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.069242
+[2022.05.06-12.18.06:942][320]LogTemp: Warning: VAL AT INTERRECOIL: 0.069242
+[2022.05.06-12.18.06:952][321]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.062910
+[2022.05.06-12.18.06:952][321]LogTemp: Warning: VAL AT INTERRECOIL: 0.062910
+[2022.05.06-12.18.06:959][322]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.057661
+[2022.05.06-12.18.06:960][322]LogTemp: Warning: VAL AT INTERRECOIL: 0.057661
+[2022.05.06-12.18.06:968][323]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.052850
+[2022.05.06-12.18.06:968][323]LogTemp: Warning: VAL AT INTERRECOIL: 0.052850
+[2022.05.06-12.18.06:977][324]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.048441
+[2022.05.06-12.18.06:977][324]LogTemp: Warning: VAL AT INTERRECOIL: 0.048441
+[2022.05.06-12.18.06:986][325]LogTemp: Warning: VAL: 2.910437
+[2022.05.06-12.18.06:986][325]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.675707
+[2022.05.06-12.18.06:986][325]LogTemp: Warning: VAL AT INTERRECOIL: 2.675707
+[2022.05.06-12.18.06:998][326]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.346385
+[2022.05.06-12.18.06:998][326]LogTemp: Warning: VAL AT INTERRECOIL: 2.346385
+[2022.05.06-12.18.07:006][327]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.142832
+[2022.05.06-12.18.07:007][327]LogTemp: Warning: VAL AT INTERRECOIL: 2.142832
+[2022.05.06-12.18.07:015][328]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.959517
+[2022.05.06-12.18.07:016][328]LogTemp: Warning: VAL AT INTERRECOIL: 1.959517
+[2022.05.06-12.18.07:025][329]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.777289
+[2022.05.06-12.18.07:025][329]LogTemp: Warning: VAL AT INTERRECOIL: 1.777289
+[2022.05.06-12.18.07:033][330]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.632114
+[2022.05.06-12.18.07:033][330]LogTemp: Warning: VAL AT INTERRECOIL: 1.632114
+[2022.05.06-12.18.07:041][331]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.498581
+[2022.05.06-12.18.07:041][331]LogTemp: Warning: VAL AT INTERRECOIL: 1.498581
+[2022.05.06-12.18.07:050][332]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.375029
+[2022.05.06-12.18.07:050][332]LogTemp: Warning: VAL AT INTERRECOIL: 1.375029
+[2022.05.06-12.18.07:058][333]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.262201
+[2022.05.06-12.18.07:058][333]LogTemp: Warning: VAL AT INTERRECOIL: 1.262201
+[2022.05.06-12.18.07:066][334]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.158500
+[2022.05.06-12.18.07:066][334]LogTemp: Warning: VAL AT INTERRECOIL: 1.158500
+[2022.05.06-12.18.07:075][335]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.063208
+[2022.05.06-12.18.07:075][335]LogTemp: Warning: VAL AT INTERRECOIL: 1.063208
+[2022.05.06-12.18.07:083][336]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.975661
+[2022.05.06-12.18.07:084][336]LogTemp: Warning: VAL AT INTERRECOIL: 0.975661
+[2022.05.06-12.18.07:091][337]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.895131
+[2022.05.06-12.18.07:092][337]LogTemp: Warning: VAL AT INTERRECOIL: 0.895131
+[2022.05.06-12.18.07:100][338]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.816025
+[2022.05.06-12.18.07:101][338]LogTemp: Warning: VAL AT INTERRECOIL: 0.816025
+[2022.05.06-12.18.07:109][339]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.743892
+[2022.05.06-12.18.07:110][339]LogTemp: Warning: VAL AT INTERRECOIL: 0.743892
+[2022.05.06-12.18.07:118][340]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.682417
+[2022.05.06-12.18.07:118][340]LogTemp: Warning: VAL AT INTERRECOIL: 0.682417
+[2022.05.06-12.18.07:126][341]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.625980
+[2022.05.06-12.18.07:126][341]LogTemp: Warning: VAL AT INTERRECOIL: 0.625980
+[2022.05.06-12.18.07:134][342]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.574181
+[2022.05.06-12.18.07:134][342]LogTemp: Warning: VAL AT INTERRECOIL: 0.574181
+[2022.05.06-12.18.07:142][343]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.526641
+[2022.05.06-12.18.07:142][343]LogTemp: Warning: VAL AT INTERRECOIL: 0.526641
+[2022.05.06-12.18.07:150][344]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.483013
+[2022.05.06-12.18.07:150][344]LogTemp: Warning: VAL AT INTERRECOIL: 0.483013
+[2022.05.06-12.18.07:158][345]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.442980
+[2022.05.06-12.18.07:159][345]LogTemp: Warning: VAL AT INTERRECOIL: 0.442980
+[2022.05.06-12.18.07:167][346]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.406248
+[2022.05.06-12.18.07:167][346]LogTemp: Warning: VAL AT INTERRECOIL: 0.406248
+[2022.05.06-12.18.07:175][347]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.372548
+[2022.05.06-12.18.07:176][347]LogTemp: Warning: VAL AT INTERRECOIL: 0.372548
+[2022.05.06-12.18.07:184][348]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.340660
+[2022.05.06-12.18.07:184][348]LogTemp: Warning: VAL AT INTERRECOIL: 0.340660
+[2022.05.06-12.18.07:192][349]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.312380
+[2022.05.06-12.18.07:193][349]LogTemp: Warning: VAL AT INTERRECOIL: 0.312380
+[2022.05.06-12.18.07:201][350]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.286439
+[2022.05.06-12.18.07:201][350]LogTemp: Warning: VAL AT INTERRECOIL: 0.286439
+[2022.05.06-12.18.07:210][351]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.261081
+[2022.05.06-12.18.07:210][351]LogTemp: Warning: VAL AT INTERRECOIL: 0.261081
+[2022.05.06-12.18.07:219][352]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.237099
+[2022.05.06-12.18.07:219][352]LogTemp: Warning: VAL AT INTERRECOIL: 0.237099
+[2022.05.06-12.18.07:229][353]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.215073
+[2022.05.06-12.18.07:229][353]LogTemp: Warning: VAL AT INTERRECOIL: 0.215073
+[2022.05.06-12.18.07:238][354]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.194117
+[2022.05.06-12.18.07:239][354]LogTemp: Warning: VAL AT INTERRECOIL: 0.194117
+[2022.05.06-12.18.07:247][355]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.176556
+[2022.05.06-12.18.07:247][355]LogTemp: Warning: VAL AT INTERRECOIL: 0.176556
+[2022.05.06-12.18.07:256][356]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.160874
+[2022.05.06-12.18.07:257][356]LogTemp: Warning: VAL AT INTERRECOIL: 0.160874
+[2022.05.06-12.18.07:265][357]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.146379
+[2022.05.06-12.18.07:265][357]LogTemp: Warning: VAL AT INTERRECOIL: 0.146379
+[2022.05.06-12.18.07:274][358]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.133150
+[2022.05.06-12.18.07:276][358]LogTemp: Warning: VAL AT INTERRECOIL: 0.133150
+[2022.05.06-12.18.07:284][359]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.120202
+[2022.05.06-12.18.07:284][359]LogTemp: Warning: VAL AT INTERRECOIL: 0.120202
+[2022.05.06-12.18.07:292][360]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.110198
+[2022.05.06-12.18.07:292][360]LogTemp: Warning: VAL AT INTERRECOIL: 0.110198
+[2022.05.06-12.18.07:301][361]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.101026
+[2022.05.06-12.18.07:301][361]LogTemp: Warning: VAL AT INTERRECOIL: 0.101026
+[2022.05.06-12.18.07:309][362]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.092617
+[2022.05.06-12.18.07:309][362]LogTemp: Warning: VAL AT INTERRECOIL: 0.092617
+[2022.05.06-12.18.07:318][363]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.084907
+[2022.05.06-12.18.07:318][363]LogTemp: Warning: VAL AT INTERRECOIL: 0.084907
+[2022.05.06-12.18.07:326][364]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.077838
+[2022.05.06-12.18.07:326][364]LogTemp: Warning: VAL AT INTERRECOIL: 0.077838
+[2022.05.06-12.18.07:335][365]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.071357
+[2022.05.06-12.18.07:335][365]LogTemp: Warning: VAL AT INTERRECOIL: 0.071357
+[2022.05.06-12.18.07:343][366]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.065415
+[2022.05.06-12.18.07:343][366]LogTemp: Warning: VAL AT INTERRECOIL: 0.065415
+[2022.05.06-12.18.07:351][367]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.059968
+[2022.05.06-12.18.07:352][367]LogTemp: Warning: VAL AT INTERRECOIL: 0.059968
+[2022.05.06-12.18.07:361][368]LogTemp: Warning: VAL: -0.869412
+[2022.05.06-12.18.07:361][368]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.791024
+[2022.05.06-12.18.07:362][368]LogTemp: Warning: VAL AT INTERRECOIL: -0.791024
+[2022.05.06-12.18.07:371][369]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.699798
+[2022.05.06-12.18.07:371][369]LogTemp: Warning: VAL AT INTERRECOIL: -0.699798
+[2022.05.06-12.18.07:380][370]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.629940
+[2022.05.06-12.18.07:381][370]LogTemp: Warning: VAL AT INTERRECOIL: -0.629940
+[2022.05.06-12.18.07:389][371]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.569111
+[2022.05.06-12.18.07:389][371]LogTemp: Warning: VAL AT INTERRECOIL: -0.569111
+[2022.05.06-12.18.07:397][372]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.515730
+[2022.05.06-12.18.07:398][372]LogTemp: Warning: VAL AT INTERRECOIL: -0.515730
+[2022.05.06-12.18.07:407][373]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.463597
+[2022.05.06-12.18.07:407][373]LogTemp: Warning: VAL AT INTERRECOIL: -0.463597
+[2022.05.06-12.18.07:416][374]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.419646
+[2022.05.06-12.18.07:416][374]LogTemp: Warning: VAL AT INTERRECOIL: -0.419646
+[2022.05.06-12.18.07:425][375]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.382538
+[2022.05.06-12.18.07:425][375]LogTemp: Warning: VAL AT INTERRECOIL: -0.382538
+[2022.05.06-12.18.07:436][376]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.339236
+[2022.05.06-12.18.07:436][376]LogTemp: Warning: VAL AT INTERRECOIL: -0.339236
+[2022.05.06-12.18.07:445][377]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.305841
+[2022.05.06-12.18.07:445][377]LogTemp: Warning: VAL AT INTERRECOIL: -0.305841
+[2022.05.06-12.18.07:453][378]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.279528
+[2022.05.06-12.18.07:453][378]LogTemp: Warning: VAL AT INTERRECOIL: -0.279528
+[2022.05.06-12.18.07:461][379]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.255539
+[2022.05.06-12.18.07:462][379]LogTemp: Warning: VAL AT INTERRECOIL: -0.255539
+[2022.05.06-12.18.07:472][380]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.229633
+[2022.05.06-12.18.07:472][380]LogTemp: Warning: VAL AT INTERRECOIL: -0.229633
+[2022.05.06-12.18.07:480][381]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.209718
+[2022.05.06-12.18.07:480][381]LogTemp: Warning: VAL AT INTERRECOIL: -0.209718
+[2022.05.06-12.18.07:488][382]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.191844
+[2022.05.06-12.18.07:489][382]LogTemp: Warning: VAL AT INTERRECOIL: -0.191844
+[2022.05.06-12.18.07:497][383]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.174351
+[2022.05.06-12.18.07:497][383]LogTemp: Warning: VAL AT INTERRECOIL: -0.174351
+[2022.05.06-12.18.07:505][384]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.159545
+[2022.05.06-12.18.07:506][384]LogTemp: Warning: VAL AT INTERRECOIL: -0.159545
+[2022.05.06-12.18.07:514][385]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.145119
+[2022.05.06-12.18.07:515][385]LogTemp: Warning: VAL AT INTERRECOIL: -0.145119
+[2022.05.06-12.18.07:523][386]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.132420
+[2022.05.06-12.18.07:524][386]LogTemp: Warning: VAL AT INTERRECOIL: -0.132420
+[2022.05.06-12.18.07:532][387]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.119840
+[2022.05.06-12.18.07:533][387]LogTemp: Warning: VAL AT INTERRECOIL: -0.119840
+[2022.05.06-12.18.07:541][388]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.109721
+[2022.05.06-12.18.07:541][388]LogTemp: Warning: VAL AT INTERRECOIL: -0.109721
+[2022.05.06-12.18.07:550][389]LogTemp: Warning: VAL: 0.488045
+[2022.05.06-12.18.07:550][389]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.440445
+[2022.05.06-12.18.07:551][389]LogTemp: Warning: VAL AT INTERRECOIL: 0.440445
+[2022.05.06-12.18.07:558][390]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.396342
+[2022.05.06-12.18.07:559][390]LogTemp: Warning: VAL AT INTERRECOIL: 0.396342
+[2022.05.06-12.18.07:567][391]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.356850
+[2022.05.06-12.18.07:567][391]LogTemp: Warning: VAL AT INTERRECOIL: 0.356850
+[2022.05.06-12.18.07:576][392]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.323726
+[2022.05.06-12.18.07:576][392]LogTemp: Warning: VAL AT INTERRECOIL: 0.323726
+[2022.05.06-12.18.07:584][393]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.293901
+[2022.05.06-12.18.07:584][393]LogTemp: Warning: VAL AT INTERRECOIL: 0.293901
+[2022.05.06-12.18.07:592][394]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.267016
+[2022.05.06-12.18.07:592][394]LogTemp: Warning: VAL AT INTERRECOIL: 0.267016
+[2022.05.06-12.18.07:600][395]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.242752
+[2022.05.06-12.18.07:601][395]LogTemp: Warning: VAL AT INTERRECOIL: 0.242752
+[2022.05.06-12.18.07:610][396]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.220832
+[2022.05.06-12.18.07:610][396]LogTemp: Warning: VAL AT INTERRECOIL: 0.220832
+[2022.05.06-12.18.07:619][397]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.197021
+[2022.05.06-12.18.07:619][397]LogTemp: Warning: VAL AT INTERRECOIL: 0.197021
+[2022.05.06-12.18.07:627][398]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.178503
+[2022.05.06-12.18.07:627][398]LogTemp: Warning: VAL AT INTERRECOIL: 0.178503
+[2022.05.06-12.18.07:635][399]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.162669
+[2022.05.06-12.18.07:636][399]LogTemp: Warning: VAL AT INTERRECOIL: 0.162669
+[2022.05.06-12.18.07:645][400]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.146593
+[2022.05.06-12.18.07:645][400]LogTemp: Warning: VAL AT INTERRECOIL: 0.146593
+[2022.05.06-12.18.07:654][401]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.132265
+[2022.05.06-12.18.07:654][401]LogTemp: Warning: VAL AT INTERRECOIL: 0.132265
+[2022.05.06-12.18.07:663][402]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.119301
+[2022.05.06-12.18.07:663][402]LogTemp: Warning: VAL AT INTERRECOIL: 0.119301
+[2022.05.06-12.18.07:672][403]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.108911
+[2022.05.06-12.18.07:672][403]LogTemp: Warning: VAL AT INTERRECOIL: 0.108911
+[2022.05.06-12.18.07:681][404]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.098257
+[2022.05.06-12.18.07:681][404]LogTemp: Warning: VAL AT INTERRECOIL: 0.098257
+[2022.05.06-12.18.07:689][405]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.089496
+[2022.05.06-12.18.07:690][405]LogTemp: Warning: VAL AT INTERRECOIL: 0.089496
+[2022.05.06-12.18.07:698][406]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.081779
+[2022.05.06-12.18.07:698][406]LogTemp: Warning: VAL AT INTERRECOIL: 0.081779
+[2022.05.06-12.18.07:707][407]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.074747
+[2022.05.06-12.18.07:707][407]LogTemp: Warning: VAL AT INTERRECOIL: 0.074747
+[2022.05.06-12.18.07:716][408]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.068336
+[2022.05.06-12.18.07:716][408]LogTemp: Warning: VAL AT INTERRECOIL: 0.068336
+[2022.05.06-12.18.07:725][409]LogTemp: Warning: VAL: 3.443531
+[2022.05.06-12.18.07:725][409]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 3.151574
+[2022.05.06-12.18.07:725][409]LogTemp: Warning: VAL AT INTERRECOIL: 3.151574
+[2022.05.06-12.18.07:734][410]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.824593
+[2022.05.06-12.18.07:734][410]LogTemp: Warning: VAL AT INTERRECOIL: 2.824593
+[2022.05.06-12.18.07:743][411]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.581344
+[2022.05.06-12.18.07:743][411]LogTemp: Warning: VAL AT INTERRECOIL: 2.581344
+[2022.05.06-12.18.07:751][412]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.363499
+[2022.05.06-12.18.07:751][412]LogTemp: Warning: VAL AT INTERRECOIL: 2.363499
+[2022.05.06-12.18.07:759][413]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.164269
+[2022.05.06-12.18.07:759][413]LogTemp: Warning: VAL AT INTERRECOIL: 2.164269
+[2022.05.06-12.18.07:768][414]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.982019
+[2022.05.06-12.18.07:768][414]LogTemp: Warning: VAL AT INTERRECOIL: 1.982019
+[2022.05.06-12.18.07:777][415]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.810741
+[2022.05.06-12.18.07:777][415]LogTemp: Warning: VAL AT INTERRECOIL: 1.810741
+[2022.05.06-12.18.07:786][416]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.632304
+[2022.05.06-12.18.07:786][416]LogTemp: Warning: VAL AT INTERRECOIL: 1.632304
+[2022.05.06-12.18.07:794][417]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.485779
+[2022.05.06-12.18.07:795][417]LogTemp: Warning: VAL AT INTERRECOIL: 1.485779
+[2022.05.06-12.18.07:804][418]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.346042
+[2022.05.06-12.18.07:804][418]LogTemp: Warning: VAL AT INTERRECOIL: 1.346042
+[2022.05.06-12.18.07:814][419]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.212340
+[2022.05.06-12.18.07:814][419]LogTemp: Warning: VAL AT INTERRECOIL: 1.212340
+[2022.05.06-12.18.07:823][420]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.092414
+[2022.05.06-12.18.07:824][420]LogTemp: Warning: VAL AT INTERRECOIL: 1.092414
+[2022.05.06-12.18.07:832][421]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.990841
+[2022.05.06-12.18.07:833][421]LogTemp: Warning: VAL AT INTERRECOIL: 0.990841
+[2022.05.06-12.18.07:842][422]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.895638
+[2022.05.06-12.18.07:842][422]LogTemp: Warning: VAL AT INTERRECOIL: 0.895638
+[2022.05.06-12.18.07:850][423]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.820690
+[2022.05.06-12.18.07:850][423]LogTemp: Warning: VAL AT INTERRECOIL: 0.820690
+[2022.05.06-12.18.07:859][424]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.748368
+[2022.05.06-12.18.07:859][424]LogTemp: Warning: VAL AT INTERRECOIL: 0.748368
+[2022.05.06-12.18.07:867][425]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.685788
+[2022.05.06-12.18.07:867][425]LogTemp: Warning: VAL AT INTERRECOIL: 0.685788
+[2022.05.06-12.18.07:876][426]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.628458
+[2022.05.06-12.18.07:876][426]LogTemp: Warning: VAL AT INTERRECOIL: 0.628458
+[2022.05.06-12.18.07:885][427]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.575935
+[2022.05.06-12.18.07:885][427]LogTemp: Warning: VAL AT INTERRECOIL: 0.575935
+[2022.05.06-12.18.07:894][428]LogTemp: Warning: VAL: 2.068748
+[2022.05.06-12.18.07:895][428]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.861915
+[2022.05.06-12.18.07:895][428]LogTemp: Warning: VAL AT INTERRECOIL: 1.861915
+[2022.05.06-12.18.07:904][429]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.652806
+[2022.05.06-12.18.07:905][429]LogTemp: Warning: VAL AT INTERRECOIL: 1.652806
+[2022.05.06-12.18.07:912][430]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.504503
+[2022.05.06-12.18.07:913][430]LogTemp: Warning: VAL AT INTERRECOIL: 1.504503
+[2022.05.06-12.18.07:922][431]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.353702
+[2022.05.06-12.18.07:922][431]LogTemp: Warning: VAL AT INTERRECOIL: 1.353702
+[2022.05.06-12.18.07:931][432]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.226546
+[2022.05.06-12.18.07:932][432]LogTemp: Warning: VAL AT INTERRECOIL: 1.226546
+[2022.05.06-12.18.07:939][433]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.115170
+[2022.05.06-12.18.07:939][433]LogTemp: Warning: VAL AT INTERRECOIL: 1.115170
+[2022.05.06-12.18.07:948][434]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.018159
+[2022.05.06-12.18.07:948][434]LogTemp: Warning: VAL AT INTERRECOIL: 1.018159
+[2022.05.06-12.18.07:956][435]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.929889
+[2022.05.06-12.18.07:957][435]LogTemp: Warning: VAL AT INTERRECOIL: 0.929889
+[2022.05.06-12.18.07:964][436]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.849498
+[2022.05.06-12.18.07:965][436]LogTemp: Warning: VAL AT INTERRECOIL: 0.849498
+[2022.05.06-12.18.07:974][437]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.770231
+[2022.05.06-12.18.07:974][437]LogTemp: Warning: VAL AT INTERRECOIL: 0.770231
+[2022.05.06-12.18.07:983][438]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.699494
+[2022.05.06-12.18.07:983][438]LogTemp: Warning: VAL AT INTERRECOIL: 0.699494
+[2022.05.06-12.18.07:992][439]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.636288
+[2022.05.06-12.18.07:992][439]LogTemp: Warning: VAL AT INTERRECOIL: 0.636288
+[2022.05.06-12.18.08:003][440]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.571283
+[2022.05.06-12.18.08:003][440]LogTemp: Warning: VAL AT INTERRECOIL: 0.571283
+[2022.05.06-12.18.08:010][441]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.521271
+[2022.05.06-12.18.08:010][441]LogTemp: Warning: VAL AT INTERRECOIL: 0.521271
+[2022.05.06-12.18.08:018][442]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.476900
+[2022.05.06-12.18.08:018][442]LogTemp: Warning: VAL AT INTERRECOIL: 0.476900
+[2022.05.06-12.18.08:027][443]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.432423
+[2022.05.06-12.18.08:028][443]LogTemp: Warning: VAL AT INTERRECOIL: 0.432423
+[2022.05.06-12.18.08:036][444]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.395743
+[2022.05.06-12.18.08:036][444]LogTemp: Warning: VAL AT INTERRECOIL: 0.395743
+[2022.05.06-12.18.08:044][445]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.362222
+[2022.05.06-12.18.08:044][445]LogTemp: Warning: VAL AT INTERRECOIL: 0.362222
+[2022.05.06-12.18.08:055][446]LogTemp: Warning: VAL: 3.225194
+[2022.05.06-12.18.08:057][446]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.872985
+[2022.05.06-12.18.08:057][446]LogTemp: Warning: VAL AT INTERRECOIL: 2.872985
+[2022.05.06-12.18.08:068][447]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.450114
+[2022.05.06-12.18.08:068][447]LogTemp: Warning: VAL AT INTERRECOIL: 2.450114
+[2022.05.06-12.18.08:077][448]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.229091
+[2022.05.06-12.18.08:077][448]LogTemp: Warning: VAL AT INTERRECOIL: 2.229091
+[2022.05.06-12.18.08:086][449]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.036299
+[2022.05.06-12.18.08:086][449]LogTemp: Warning: VAL AT INTERRECOIL: 2.036299
+[2022.05.06-12.18.08:094][450]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.860726
+[2022.05.06-12.18.08:094][450]LogTemp: Warning: VAL AT INTERRECOIL: 1.860726
+[2022.05.06-12.18.08:102][451]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.697532
+[2022.05.06-12.18.08:103][451]LogTemp: Warning: VAL AT INTERRECOIL: 1.697532
+[2022.05.06-12.18.08:111][452]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.551966
+[2022.05.06-12.18.08:111][452]LogTemp: Warning: VAL AT INTERRECOIL: 1.551966
+[2022.05.06-12.18.08:118][453]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.419200
+[2022.05.06-12.18.08:118][453]LogTemp: Warning: VAL AT INTERRECOIL: 1.419200
+[2022.05.06-12.18.08:127][454]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.298053
+[2022.05.06-12.18.08:127][454]LogTemp: Warning: VAL AT INTERRECOIL: 1.298053
+[2022.05.06-12.18.08:135][455]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.187471
+[2022.05.06-12.18.08:135][455]LogTemp: Warning: VAL AT INTERRECOIL: 1.187471
+[2022.05.06-12.18.08:144][456]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.080687
+[2022.05.06-12.18.08:144][456]LogTemp: Warning: VAL AT INTERRECOIL: 1.080687
+[2022.05.06-12.18.08:152][457]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.988951
+[2022.05.06-12.18.08:153][457]LogTemp: Warning: VAL AT INTERRECOIL: 0.988951
+[2022.05.06-12.18.08:161][458]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.905133
+[2022.05.06-12.18.08:161][458]LogTemp: Warning: VAL AT INTERRECOIL: 0.905133
+[2022.05.06-12.18.08:169][459]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.828527
+[2022.05.06-12.18.08:169][459]LogTemp: Warning: VAL AT INTERRECOIL: 0.828527
+[2022.05.06-12.18.08:178][460]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.758493
+[2022.05.06-12.18.08:178][460]LogTemp: Warning: VAL AT INTERRECOIL: 0.758493
+[2022.05.06-12.18.08:186][461]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.692139
+[2022.05.06-12.18.08:186][461]LogTemp: Warning: VAL AT INTERRECOIL: 0.692139
+[2022.05.06-12.18.08:194][462]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.633770
+[2022.05.06-12.18.08:194][462]LogTemp: Warning: VAL AT INTERRECOIL: 0.633770
+[2022.05.06-12.18.08:202][463]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.580377
+[2022.05.06-12.18.08:203][463]LogTemp: Warning: VAL AT INTERRECOIL: 0.580377
+[2022.05.06-12.18.08:211][464]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.531524
+[2022.05.06-12.18.08:211][464]LogTemp: Warning: VAL AT INTERRECOIL: 0.531524
+[2022.05.06-12.18.08:221][465]LogTemp: Warning: VAL: 4.555423
+[2022.05.06-12.18.08:221][465]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 4.179718
+[2022.05.06-12.18.08:221][465]LogTemp: Warning: VAL AT INTERRECOIL: 4.179718
+[2022.05.06-12.18.08:228][466]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 3.808902
+[2022.05.06-12.18.08:229][466]LogTemp: Warning: VAL AT INTERRECOIL: 3.808902
+[2022.05.06-12.18.08:237][467]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 3.494097
+[2022.05.06-12.18.08:237][467]LogTemp: Warning: VAL AT INTERRECOIL: 3.494097
+[2022.05.06-12.18.08:245][468]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 3.205067
+[2022.05.06-12.18.08:245][468]LogTemp: Warning: VAL AT INTERRECOIL: 3.205067
+[2022.05.06-12.18.08:253][469]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.939750
+[2022.05.06-12.18.08:253][469]LogTemp: Warning: VAL AT INTERRECOIL: 2.939750
+[2022.05.06-12.18.08:261][470]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.696234
+[2022.05.06-12.18.08:262][470]LogTemp: Warning: VAL AT INTERRECOIL: 2.696234
+[2022.05.06-12.18.08:270][471]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.472754
+[2022.05.06-12.18.08:270][471]LogTemp: Warning: VAL AT INTERRECOIL: 2.472754
+[2022.05.06-12.18.08:278][472]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.264960
+[2022.05.06-12.18.08:278][472]LogTemp: Warning: VAL AT INTERRECOIL: 2.264960
+[2022.05.06-12.18.08:286][473]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.077035
+[2022.05.06-12.18.08:287][473]LogTemp: Warning: VAL AT INTERRECOIL: 2.077035
+[2022.05.06-12.18.08:295][474]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.904631
+[2022.05.06-12.18.08:295][474]LogTemp: Warning: VAL AT INTERRECOIL: 1.904631
+[2022.05.06-12.18.08:303][475]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.746478
+[2022.05.06-12.18.08:303][475]LogTemp: Warning: VAL AT INTERRECOIL: 1.746478
+[2022.05.06-12.18.08:312][476]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.601407
+[2022.05.06-12.18.08:312][476]LogTemp: Warning: VAL AT INTERRECOIL: 1.601407
+[2022.05.06-12.18.08:320][477]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.468349
+[2022.05.06-12.18.08:321][477]LogTemp: Warning: VAL AT INTERRECOIL: 1.468349
+[2022.05.06-12.18.08:329][478]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.346312
+[2022.05.06-12.18.08:329][478]LogTemp: Warning: VAL AT INTERRECOIL: 1.346312
+[2022.05.06-12.18.08:337][479]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.234389
+[2022.05.06-12.18.08:337][479]LogTemp: Warning: VAL AT INTERRECOIL: 1.234389
+[2022.05.06-12.18.08:346][480]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.131746
+[2022.05.06-12.18.08:346][480]LogTemp: Warning: VAL AT INTERRECOIL: 1.131746
+[2022.05.06-12.18.08:354][481]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.037621
+[2022.05.06-12.18.08:355][481]LogTemp: Warning: VAL AT INTERRECOIL: 1.037621
+[2022.05.06-12.18.08:363][482]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.951307
+[2022.05.06-12.18.08:363][482]LogTemp: Warning: VAL AT INTERRECOIL: 0.951307
+[2022.05.06-12.18.08:371][483]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.869161
+[2022.05.06-12.18.08:371][483]LogTemp: Warning: VAL AT INTERRECOIL: 0.869161
+[2022.05.06-12.18.08:379][484]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.796839
+[2022.05.06-12.18.08:380][484]LogTemp: Warning: VAL AT INTERRECOIL: 0.796839
+[2022.05.06-12.18.08:388][485]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.730525
+[2022.05.06-12.18.08:388][485]LogTemp: Warning: VAL AT INTERRECOIL: 0.730525
+[2022.05.06-12.18.08:397][486]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.665374
+[2022.05.06-12.18.08:397][486]LogTemp: Warning: VAL AT INTERRECOIL: 0.665374
+[2022.05.06-12.18.08:406][487]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.606005
+[2022.05.06-12.18.08:406][487]LogTemp: Warning: VAL AT INTERRECOIL: 0.606005
+[2022.05.06-12.18.08:414][488]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.555555
+[2022.05.06-12.18.08:414][488]LogTemp: Warning: VAL AT INTERRECOIL: 0.555555
+[2022.05.06-12.18.08:422][489]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.507466
+[2022.05.06-12.18.08:423][489]LogTemp: Warning: VAL AT INTERRECOIL: 0.507466
+[2022.05.06-12.18.08:432][490]LogTemp: Warning: VAL: 2.315231
+[2022.05.06-12.18.08:432][490]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 2.125814
+[2022.05.06-12.18.08:432][490]LogTemp: Warning: VAL AT INTERRECOIL: 2.125814
+[2022.05.06-12.18.08:441][491]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.921734
+[2022.05.06-12.18.08:441][491]LogTemp: Warning: VAL AT INTERRECOIL: 1.921734
+[2022.05.06-12.18.08:450][492]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.750380
+[2022.05.06-12.18.08:450][492]LogTemp: Warning: VAL AT INTERRECOIL: 1.750380
+[2022.05.06-12.18.08:458][493]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.608219
+[2022.05.06-12.18.08:458][493]LogTemp: Warning: VAL AT INTERRECOIL: 1.608219
+[2022.05.06-12.18.08:467][494]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.477331
+[2022.05.06-12.18.08:467][494]LogTemp: Warning: VAL AT INTERRECOIL: 1.477331
+[2022.05.06-12.18.08:475][495]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.356789
+[2022.05.06-12.18.08:475][495]LogTemp: Warning: VAL AT INTERRECOIL: 1.356789
+[2022.05.06-12.18.08:483][496]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.245955
+[2022.05.06-12.18.08:483][496]LogTemp: Warning: VAL AT INTERRECOIL: 1.245955
+[2022.05.06-12.18.08:491][497]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.143993
+[2022.05.06-12.18.08:492][497]LogTemp: Warning: VAL AT INTERRECOIL: 1.143993
+[2022.05.06-12.18.08:499][498]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 1.050246
+[2022.05.06-12.18.08:500][498]LogTemp: Warning: VAL AT INTERRECOIL: 1.050246
+[2022.05.06-12.18.08:508][499]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.964065
+[2022.05.06-12.18.08:508][499]LogTemp: Warning: VAL AT INTERRECOIL: 0.964065
+[2022.05.06-12.18.08:516][500]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.884854
+[2022.05.06-12.18.08:517][500]LogTemp: Warning: VAL AT INTERRECOIL: 0.884854
+[2022.05.06-12.18.08:525][501]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.812064
+[2022.05.06-12.18.08:525][501]LogTemp: Warning: VAL AT INTERRECOIL: 0.812064
+[2022.05.06-12.18.08:533][502]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.745193
+[2022.05.06-12.18.08:533][502]LogTemp: Warning: VAL AT INTERRECOIL: 0.745193
+[2022.05.06-12.18.08:541][503]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.683261
+[2022.05.06-12.18.08:541][503]LogTemp: Warning: VAL AT INTERRECOIL: 0.683261
+[2022.05.06-12.18.08:549][504]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.626890
+[2022.05.06-12.18.08:550][504]LogTemp: Warning: VAL AT INTERRECOIL: 0.626890
+[2022.05.06-12.18.08:558][505]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.575127
+[2022.05.06-12.18.08:558][505]LogTemp: Warning: VAL AT INTERRECOIL: 0.575127
+[2022.05.06-12.18.08:566][506]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.527602
+[2022.05.06-12.18.08:566][506]LogTemp: Warning: VAL AT INTERRECOIL: 0.527602
+[2022.05.06-12.18.08:574][507]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.483973
+[2022.05.06-12.18.08:575][507]LogTemp: Warning: VAL AT INTERRECOIL: 0.483973
+[2022.05.06-12.18.08:583][508]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.443926
+[2022.05.06-12.18.08:583][508]LogTemp: Warning: VAL AT INTERRECOIL: 0.443926
+[2022.05.06-12.18.08:592][509]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.407172
+[2022.05.06-12.18.08:592][509]LogTemp: Warning: VAL AT INTERRECOIL: 0.407172
+[2022.05.06-12.18.08:600][510]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.373442
+[2022.05.06-12.18.08:600][510]LogTemp: Warning: VAL AT INTERRECOIL: 0.373442
+[2022.05.06-12.18.08:608][511]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.342492
+[2022.05.06-12.18.08:609][511]LogTemp: Warning: VAL AT INTERRECOIL: 0.342492
+[2022.05.06-12.18.08:617][512]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.314094
+[2022.05.06-12.18.08:617][512]LogTemp: Warning: VAL AT INTERRECOIL: 0.314094
+[2022.05.06-12.18.08:624][513]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.288038
+[2022.05.06-12.18.08:625][513]LogTemp: Warning: VAL AT INTERRECOIL: 0.288038
+[2022.05.06-12.18.08:633][514]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.264136
+[2022.05.06-12.18.08:633][514]LogTemp: Warning: VAL AT INTERRECOIL: 0.264136
+[2022.05.06-12.18.08:641][515]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.242209
+[2022.05.06-12.18.08:641][515]LogTemp: Warning: VAL AT INTERRECOIL: 0.242209
+[2022.05.06-12.18.08:650][516]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.222096
+[2022.05.06-12.18.08:650][516]LogTemp: Warning: VAL AT INTERRECOIL: 0.222096
+[2022.05.06-12.18.08:658][517]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.203648
+[2022.05.06-12.18.08:659][517]LogTemp: Warning: VAL AT INTERRECOIL: 0.203648
+[2022.05.06-12.18.08:666][518]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.186728
+[2022.05.06-12.18.08:667][518]LogTemp: Warning: VAL AT INTERRECOIL: 0.186728
+[2022.05.06-12.18.08:675][519]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.171209
+[2022.05.06-12.18.08:675][519]LogTemp: Warning: VAL AT INTERRECOIL: 0.171209
+[2022.05.06-12.18.08:683][520]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.156977
+[2022.05.06-12.18.08:683][520]LogTemp: Warning: VAL AT INTERRECOIL: 0.156977
+[2022.05.06-12.18.08:691][521]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.143926
+[2022.05.06-12.18.08:691][521]LogTemp: Warning: VAL AT INTERRECOIL: 0.143926
+[2022.05.06-12.18.08:700][522]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.131911
+[2022.05.06-12.18.08:700][522]LogTemp: Warning: VAL AT INTERRECOIL: 0.131911
+[2022.05.06-12.18.08:709][523]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.120220
+[2022.05.06-12.18.08:709][523]LogTemp: Warning: VAL AT INTERRECOIL: 0.120220
+[2022.05.06-12.18.08:718][524]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.110207
+[2022.05.06-12.18.08:718][524]LogTemp: Warning: VAL AT INTERRECOIL: 0.110207
+[2022.05.06-12.18.08:726][525]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.101037
+[2022.05.06-12.18.08:726][525]LogTemp: Warning: VAL AT INTERRECOIL: 0.101037
+[2022.05.06-12.18.08:735][526]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.092630
+[2022.05.06-12.18.08:735][526]LogTemp: Warning: VAL AT INTERRECOIL: 0.092630
+[2022.05.06-12.18.08:742][527]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.084921
+[2022.05.06-12.18.08:743][527]LogTemp: Warning: VAL AT INTERRECOIL: 0.084921
+[2022.05.06-12.18.08:751][528]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.077853
+[2022.05.06-12.18.08:751][528]LogTemp: Warning: VAL AT INTERRECOIL: 0.077853
+[2022.05.06-12.18.08:759][529]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.071372
+[2022.05.06-12.18.08:760][529]LogTemp: Warning: VAL AT INTERRECOIL: 0.071372
+[2022.05.06-12.18.08:768][530]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.065108
+[2022.05.06-12.18.08:768][530]LogTemp: Warning: VAL AT INTERRECOIL: 0.065108
+[2022.05.06-12.18.08:776][531]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.059687
+[2022.05.06-12.18.08:777][531]LogTemp: Warning: VAL AT INTERRECOIL: 0.059687
+[2022.05.06-12.18.08:785][532]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.054717
+[2022.05.06-12.18.08:785][532]LogTemp: Warning: VAL AT INTERRECOIL: 0.054717
+[2022.05.06-12.18.08:793][533]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.050161
+[2022.05.06-12.18.08:793][533]LogTemp: Warning: VAL AT INTERRECOIL: 0.050161
+[2022.05.06-12.18.08:801][534]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.045811
+[2022.05.06-12.18.08:802][534]LogTemp: Warning: VAL AT INTERRECOIL: 0.045811
+[2022.05.06-12.18.08:810][535]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.041965
+[2022.05.06-12.18.08:810][535]LogTemp: Warning: VAL AT INTERRECOIL: 0.041965
+[2022.05.06-12.18.08:819][536]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.038456
+[2022.05.06-12.18.08:819][536]LogTemp: Warning: VAL AT INTERRECOIL: 0.038456
+[2022.05.06-12.18.08:827][537]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.035211
+[2022.05.06-12.18.08:827][537]LogTemp: Warning: VAL AT INTERRECOIL: 0.035211
+[2022.05.06-12.18.08:836][538]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.032278
+[2022.05.06-12.18.08:836][538]LogTemp: Warning: VAL AT INTERRECOIL: 0.032278
+[2022.05.06-12.18.08:844][539]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.029590
+[2022.05.06-12.18.08:844][539]LogTemp: Warning: VAL AT INTERRECOIL: 0.029590
+[2022.05.06-12.18.08:853][540]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.026858
+[2022.05.06-12.18.08:853][540]LogTemp: Warning: VAL AT INTERRECOIL: 0.026858
+[2022.05.06-12.18.08:862][541]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.024410
+[2022.05.06-12.18.08:862][541]LogTemp: Warning: VAL AT INTERRECOIL: 0.024410
+[2022.05.06-12.18.08:871][542]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.022377
+[2022.05.06-12.18.08:871][542]LogTemp: Warning: VAL AT INTERRECOIL: 0.022377
+[2022.05.06-12.18.08:878][543]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.020512
+[2022.05.06-12.18.08:879][543]LogTemp: Warning: VAL AT INTERRECOIL: 0.020512
+[2022.05.06-12.18.08:887][544]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.018618
+[2022.05.06-12.18.08:888][544]LogTemp: Warning: VAL AT INTERRECOIL: 0.018618
+[2022.05.06-12.18.08:896][545]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.017067
+[2022.05.06-12.18.08:896][545]LogTemp: Warning: VAL AT INTERRECOIL: 0.017067
+[2022.05.06-12.18.08:905][546]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.015645
+[2022.05.06-12.18.08:905][546]LogTemp: Warning: VAL AT INTERRECOIL: 0.015645
+[2022.05.06-12.18.08:914][547]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.014260
+[2022.05.06-12.18.08:914][547]LogTemp: Warning: VAL AT INTERRECOIL: 0.014260
+[2022.05.06-12.18.08:922][548]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.013072
+[2022.05.06-12.18.08:922][548]LogTemp: Warning: VAL AT INTERRECOIL: 0.013072
+[2022.05.06-12.18.08:931][549]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.011833
+[2022.05.06-12.18.08:931][549]LogTemp: Warning: VAL AT INTERRECOIL: 0.011833
+[2022.05.06-12.18.08:940][550]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.010828
+[2022.05.06-12.18.08:940][550]LogTemp: Warning: VAL AT INTERRECOIL: 0.010828
+[2022.05.06-12.18.08:948][551]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.009841
+[2022.05.06-12.18.08:948][551]LogTemp: Warning: VAL AT INTERRECOIL: 0.009841
+[2022.05.06-12.18.08:957][552]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.009021
+[2022.05.06-12.18.08:957][552]LogTemp: Warning: VAL AT INTERRECOIL: 0.009021
+[2022.05.06-12.18.08:965][553]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.008269
+[2022.05.06-12.18.08:965][553]LogTemp: Warning: VAL AT INTERRECOIL: 0.008269
+[2022.05.06-12.18.08:973][554]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.007580
+[2022.05.06-12.18.08:974][554]LogTemp: Warning: VAL AT INTERRECOIL: 0.007580
+[2022.05.06-12.18.08:982][555]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.006949
+[2022.05.06-12.18.08:982][555]LogTemp: Warning: VAL AT INTERRECOIL: 0.006949
+[2022.05.06-12.18.08:990][556]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.006370
+[2022.05.06-12.18.08:990][556]LogTemp: Warning: VAL AT INTERRECOIL: 0.006370
+[2022.05.06-12.18.08:998][557]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.005839
+[2022.05.06-12.18.08:999][557]LogTemp: Warning: VAL AT INTERRECOIL: 0.005839
+[2022.05.06-12.18.09:007][558]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.005352
+[2022.05.06-12.18.09:007][558]LogTemp: Warning: VAL AT INTERRECOIL: 0.005352
+[2022.05.06-12.18.09:015][559]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.004906
+[2022.05.06-12.18.09:015][559]LogTemp: Warning: VAL AT INTERRECOIL: 0.004906
+[2022.05.06-12.18.09:023][560]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.004498
+[2022.05.06-12.18.09:024][560]LogTemp: Warning: VAL AT INTERRECOIL: 0.004498
+[2022.05.06-12.18.09:032][561]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.004123
+[2022.05.06-12.18.09:032][561]LogTemp: Warning: VAL AT INTERRECOIL: 0.004123
+[2022.05.06-12.18.09:039][562]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.003779
+[2022.05.06-12.18.09:039][562]LogTemp: Warning: VAL AT INTERRECOIL: 0.003779
+[2022.05.06-12.18.09:047][563]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.003464
+[2022.05.06-12.18.09:048][563]LogTemp: Warning: VAL AT INTERRECOIL: 0.003464
+[2022.05.06-12.18.09:056][564]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.003176
+[2022.05.06-12.18.09:057][564]LogTemp: Warning: VAL AT INTERRECOIL: 0.003176
+[2022.05.06-12.18.09:065][565]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.002911
+[2022.05.06-12.18.09:065][565]LogTemp: Warning: VAL AT INTERRECOIL: 0.002911
+[2022.05.06-12.18.09:073][566]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.002668
+[2022.05.06-12.18.09:073][566]LogTemp: Warning: VAL AT INTERRECOIL: 0.002668
+[2022.05.06-12.18.09:081][567]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.002446
+[2022.05.06-12.18.09:081][567]LogTemp: Warning: VAL AT INTERRECOIL: 0.002446
+[2022.05.06-12.18.09:090][568]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.002242
+[2022.05.06-12.18.09:090][568]LogTemp: Warning: VAL AT INTERRECOIL: 0.002242
+[2022.05.06-12.18.09:098][569]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.002055
+[2022.05.06-12.18.09:098][569]LogTemp: Warning: VAL AT INTERRECOIL: 0.002055
+[2022.05.06-12.18.09:106][570]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001884
+[2022.05.06-12.18.09:106][570]LogTemp: Warning: VAL AT INTERRECOIL: 0.001884
+[2022.05.06-12.18.09:114][571]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001727
+[2022.05.06-12.18.09:115][571]LogTemp: Warning: VAL AT INTERRECOIL: 0.001727
+[2022.05.06-12.18.09:123][572]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001583
+[2022.05.06-12.18.09:123][572]LogTemp: Warning: VAL AT INTERRECOIL: 0.001583
+[2022.05.06-12.18.09:131][573]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001451
+[2022.05.06-12.18.09:131][573]LogTemp: Warning: VAL AT INTERRECOIL: 0.001451
+[2022.05.06-12.18.09:139][574]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001330
+[2022.05.06-12.18.09:140][574]LogTemp: Warning: VAL AT INTERRECOIL: 0.001330
+[2022.05.06-12.18.09:148][575]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001219
+[2022.05.06-12.18.09:148][575]LogTemp: Warning: VAL AT INTERRECOIL: 0.001219
+[2022.05.06-12.18.09:156][576]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001117
+[2022.05.06-12.18.09:156][576]LogTemp: Warning: VAL AT INTERRECOIL: 0.001117
+[2022.05.06-12.18.09:164][577]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001024
+[2022.05.06-12.18.09:165][577]LogTemp: Warning: VAL AT INTERRECOIL: 0.001024
+[2022.05.06-12.18.09:173][578]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.000939
+[2022.05.06-12.18.09:174][578]LogTemp: Warning: VAL AT INTERRECOIL: 0.000939
+[2022.05.06-12.18.09:182][579]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.000860
+[2022.05.06-12.18.09:182][579]LogTemp: Warning: VAL AT INTERRECOIL: 0.000860
+[2022.05.06-12.18.09:190][580]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.000787
+[2022.05.06-12.18.09:191][580]LogTemp: Warning: VAL AT INTERRECOIL: 0.000787
+[2022.05.06-12.18.09:199][581]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.000721
+[2022.05.06-12.18.09:199][581]LogTemp: Warning: VAL AT INTERRECOIL: 0.000721
+[2022.05.06-12.18.09:207][582]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.000661
+[2022.05.06-12.18.09:207][582]LogTemp: Warning: VAL AT INTERRECOIL: 0.000661
+[2022.05.06-12.18.09:216][583]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.000606
+[2022.05.06-12.18.09:216][583]LogTemp: Warning: VAL AT INTERRECOIL: 0.000606
+[2022.05.06-12.18.09:223][584]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.000555
+[2022.05.06-12.18.09:223][584]LogTemp: Warning: VAL AT INTERRECOIL: 0.000555
+[2022.05.06-12.18.09:231][585]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.000509
+[2022.05.06-12.18.09:232][585]LogTemp: Warning: VAL AT INTERRECOIL: 0.000509
+[2022.05.06-12.18.09:241][586]LogTemp: Warning: VAL: 0.907366
+[2022.05.06-12.18.09:242][586]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.830333
+[2022.05.06-12.18.09:242][586]LogTemp: Warning: VAL AT INTERRECOIL: 0.830333
+[2022.05.06-12.18.09:252][587]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.734562
+[2022.05.06-12.18.09:252][587]LogTemp: Warning: VAL AT INTERRECOIL: 0.734562
+[2022.05.06-12.18.09:260][588]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.673538
+[2022.05.06-12.18.09:261][588]LogTemp: Warning: VAL AT INTERRECOIL: 0.673538
+[2022.05.06-12.18.09:269][589]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.615863
+[2022.05.06-12.18.09:270][589]LogTemp: Warning: VAL AT INTERRECOIL: 0.615863
+[2022.05.06-12.18.09:278][590]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.565221
+[2022.05.06-12.18.09:278][590]LogTemp: Warning: VAL AT INTERRECOIL: 0.565221
+[2022.05.06-12.18.09:287][591]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.518691
+[2022.05.06-12.18.09:287][591]LogTemp: Warning: VAL AT INTERRECOIL: 0.518691
+[2022.05.06-12.18.09:294][592]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.475317
+[2022.05.06-12.18.09:295][592]LogTemp: Warning: VAL AT INTERRECOIL: 0.475317
+[2022.05.06-12.18.09:303][593]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.432350
+[2022.05.06-12.18.09:304][593]LogTemp: Warning: VAL AT INTERRECOIL: 0.432350
+[2022.05.06-12.18.09:313][594]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.393601
+[2022.05.06-12.18.09:313][594]LogTemp: Warning: VAL AT INTERRECOIL: 0.393601
+[2022.05.06-12.18.09:321][595]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.361075
+[2022.05.06-12.18.09:321][595]LogTemp: Warning: VAL AT INTERRECOIL: 0.361075
+[2022.05.06-12.18.09:329][596]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.331216
+[2022.05.06-12.18.09:330][596]LogTemp: Warning: VAL AT INTERRECOIL: 0.331216
+[2022.05.06-12.18.09:338][597]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.303808
+[2022.05.06-12.18.09:338][597]LogTemp: Warning: VAL AT INTERRECOIL: 0.303808
+[2022.05.06-12.18.09:346][598]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.278285
+[2022.05.06-12.18.09:346][598]LogTemp: Warning: VAL AT INTERRECOIL: 0.278285
+[2022.05.06-12.18.09:355][599]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.253810
+[2022.05.06-12.18.09:356][599]LogTemp: Warning: VAL AT INTERRECOIL: 0.253810
+[2022.05.06-12.18.09:364][600]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.232085
+[2022.05.06-12.18.09:364][600]LogTemp: Warning: VAL AT INTERRECOIL: 0.232085
+[2022.05.06-12.18.09:373][601]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.212837
+[2022.05.06-12.18.09:373][601]LogTemp: Warning: VAL AT INTERRECOIL: 0.212837
+[2022.05.06-12.18.09:381][602]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.195180
+[2022.05.06-12.18.09:381][602]LogTemp: Warning: VAL AT INTERRECOIL: 0.195180
+[2022.05.06-12.18.09:390][603]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.178981
+[2022.05.06-12.18.09:390][603]LogTemp: Warning: VAL AT INTERRECOIL: 0.178981
+[2022.05.06-12.18.09:397][604]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.163880
+[2022.05.06-12.18.09:397][604]LogTemp: Warning: VAL AT INTERRECOIL: 0.163880
+[2022.05.06-12.18.09:405][605]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.150235
+[2022.05.06-12.18.09:405][605]LogTemp: Warning: VAL AT INTERRECOIL: 0.150235
+[2022.05.06-12.18.09:414][606]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.137754
+[2022.05.06-12.18.09:414][606]LogTemp: Warning: VAL AT INTERRECOIL: 0.137754
+[2022.05.06-12.18.09:423][607]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.124954
+[2022.05.06-12.18.09:424][607]LogTemp: Warning: VAL AT INTERRECOIL: 0.124954
+[2022.05.06-12.18.09:431][608]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.114569
+[2022.05.06-12.18.09:432][608]LogTemp: Warning: VAL AT INTERRECOIL: 0.114569
+[2022.05.06-12.18.09:440][609]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.105044
+[2022.05.06-12.18.09:440][609]LogTemp: Warning: VAL AT INTERRECOIL: 0.105044
+[2022.05.06-12.18.09:448][610]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.096309
+[2022.05.06-12.18.09:448][610]LogTemp: Warning: VAL AT INTERRECOIL: 0.096309
+[2022.05.06-12.18.09:456][611]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.088299
+[2022.05.06-12.18.09:457][611]LogTemp: Warning: VAL AT INTERRECOIL: 0.088299
+[2022.05.06-12.18.09:465][612]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.080855
+[2022.05.06-12.18.09:465][612]LogTemp: Warning: VAL AT INTERRECOIL: 0.080855
+[2022.05.06-12.18.09:473][613]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.074129
+[2022.05.06-12.18.09:473][613]LogTemp: Warning: VAL AT INTERRECOIL: 0.074129
+[2022.05.06-12.18.09:481][614]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.067961
+[2022.05.06-12.18.09:481][614]LogTemp: Warning: VAL AT INTERRECOIL: 0.067961
+[2022.05.06-12.18.09:490][615]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.062305
+[2022.05.06-12.18.09:491][615]LogTemp: Warning: VAL AT INTERRECOIL: 0.062305
+[2022.05.06-12.18.09:498][616]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.057120
+[2022.05.06-12.18.09:499][616]LogTemp: Warning: VAL AT INTERRECOIL: 0.057120
+[2022.05.06-12.18.09:506][617]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.052366
+[2022.05.06-12.18.09:507][617]LogTemp: Warning: VAL AT INTERRECOIL: 0.052366
+[2022.05.06-12.18.09:515][618]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.048007
+[2022.05.06-12.18.09:515][618]LogTemp: Warning: VAL AT INTERRECOIL: 0.048007
+[2022.05.06-12.18.09:523][619]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.043999
+[2022.05.06-12.18.09:523][619]LogTemp: Warning: VAL AT INTERRECOIL: 0.043999
+[2022.05.06-12.18.09:532][620]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.040203
+[2022.05.06-12.18.09:532][620]LogTemp: Warning: VAL AT INTERRECOIL: 0.040203
+[2022.05.06-12.18.09:540][621]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.036856
+[2022.05.06-12.18.09:540][621]LogTemp: Warning: VAL AT INTERRECOIL: 0.036856
+[2022.05.06-12.18.09:548][622]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.033787
+[2022.05.06-12.18.09:548][622]LogTemp: Warning: VAL AT INTERRECOIL: 0.033787
+[2022.05.06-12.18.09:557][623]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.030935
+[2022.05.06-12.18.09:558][623]LogTemp: Warning: VAL AT INTERRECOIL: 0.030935
+[2022.05.06-12.18.09:565][624]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.028358
+[2022.05.06-12.18.09:566][624]LogTemp: Warning: VAL AT INTERRECOIL: 0.028358
+[2022.05.06-12.18.09:574][625]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.025997
+[2022.05.06-12.18.09:574][625]LogTemp: Warning: VAL AT INTERRECOIL: 0.025997
+[2022.05.06-12.18.09:582][626]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.023831
+[2022.05.06-12.18.09:582][626]LogTemp: Warning: VAL AT INTERRECOIL: 0.023831
+[2022.05.06-12.18.09:591][627]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.021846
+[2022.05.06-12.18.09:591][627]LogTemp: Warning: VAL AT INTERRECOIL: 0.021846
+[2022.05.06-12.18.09:599][628]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.020027
+[2022.05.06-12.18.09:599][628]LogTemp: Warning: VAL AT INTERRECOIL: 0.020027
+[2022.05.06-12.18.09:606][629]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.018358
+[2022.05.06-12.18.09:607][629]LogTemp: Warning: VAL AT INTERRECOIL: 0.018358
+[2022.05.06-12.18.09:615][630]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.016829
+[2022.05.06-12.18.09:615][630]LogTemp: Warning: VAL AT INTERRECOIL: 0.016829
+[2022.05.06-12.18.09:623][631]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.015427
+[2022.05.06-12.18.09:623][631]LogTemp: Warning: VAL AT INTERRECOIL: 0.015427
+[2022.05.06-12.18.09:631][632]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.014142
+[2022.05.06-12.18.09:632][632]LogTemp: Warning: VAL AT INTERRECOIL: 0.014142
+[2022.05.06-12.18.09:640][633]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.012964
+[2022.05.06-12.18.09:640][633]LogTemp: Warning: VAL AT INTERRECOIL: 0.012964
+[2022.05.06-12.18.09:648][634]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.011884
+[2022.05.06-12.18.09:648][634]LogTemp: Warning: VAL AT INTERRECOIL: 0.011884
+[2022.05.06-12.18.09:657][635]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.010894
+[2022.05.06-12.18.09:657][635]LogTemp: Warning: VAL AT INTERRECOIL: 0.010894
+[2022.05.06-12.18.09:665][636]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.009986
+[2022.05.06-12.18.09:666][636]LogTemp: Warning: VAL AT INTERRECOIL: 0.009986
+[2022.05.06-12.18.09:674][637]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.009154
+[2022.05.06-12.18.09:674][637]LogTemp: Warning: VAL AT INTERRECOIL: 0.009154
+[2022.05.06-12.18.09:683][638]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.008367
+[2022.05.06-12.18.09:683][638]LogTemp: Warning: VAL AT INTERRECOIL: 0.008367
+[2022.05.06-12.18.09:691][639]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.007670
+[2022.05.06-12.18.09:691][639]LogTemp: Warning: VAL AT INTERRECOIL: 0.007670
+[2022.05.06-12.18.09:700][640]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.007010
+[2022.05.06-12.18.09:700][640]LogTemp: Warning: VAL AT INTERRECOIL: 0.007010
+[2022.05.06-12.18.09:708][641]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.006389
+[2022.05.06-12.18.09:709][641]LogTemp: Warning: VAL AT INTERRECOIL: 0.006389
+[2022.05.06-12.18.09:717][642]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.005857
+[2022.05.06-12.18.09:717][642]LogTemp: Warning: VAL AT INTERRECOIL: 0.005857
+[2022.05.06-12.18.09:726][643]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.005366
+[2022.05.06-12.18.09:726][643]LogTemp: Warning: VAL AT INTERRECOIL: 0.005366
+[2022.05.06-12.18.09:734][644]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.004919
+[2022.05.06-12.18.09:734][644]LogTemp: Warning: VAL AT INTERRECOIL: 0.004919
+[2022.05.06-12.18.09:742][645]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.004509
+[2022.05.06-12.18.09:742][645]LogTemp: Warning: VAL AT INTERRECOIL: 0.004509
+[2022.05.06-12.18.09:750][646]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.004133
+[2022.05.06-12.18.09:751][646]LogTemp: Warning: VAL AT INTERRECOIL: 0.004133
+[2022.05.06-12.18.09:761][647]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.003710
+[2022.05.06-12.18.09:761][647]LogTemp: Warning: VAL AT INTERRECOIL: 0.003710
+[2022.05.06-12.18.09:770][648]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.003359
+[2022.05.06-12.18.09:770][648]LogTemp: Warning: VAL AT INTERRECOIL: 0.003359
+[2022.05.06-12.18.09:778][649]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.003079
+[2022.05.06-12.18.09:778][649]LogTemp: Warning: VAL AT INTERRECOIL: 0.003079
+[2022.05.06-12.18.09:786][650]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.002823
+[2022.05.06-12.18.09:786][650]LogTemp: Warning: VAL AT INTERRECOIL: 0.002823
+[2022.05.06-12.18.09:795][651]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.002587
+[2022.05.06-12.18.09:795][651]LogTemp: Warning: VAL AT INTERRECOIL: 0.002587
+[2022.05.06-12.18.09:803][652]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.002372
+[2022.05.06-12.18.09:803][652]LogTemp: Warning: VAL AT INTERRECOIL: 0.002372
+[2022.05.06-12.18.09:812][653]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.002158
+[2022.05.06-12.18.09:812][653]LogTemp: Warning: VAL AT INTERRECOIL: 0.002158
+[2022.05.06-12.18.09:820][654]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001978
+[2022.05.06-12.18.09:820][654]LogTemp: Warning: VAL AT INTERRECOIL: 0.001978
+[2022.05.06-12.18.09:829][655]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001814
+[2022.05.06-12.18.09:829][655]LogTemp: Warning: VAL AT INTERRECOIL: 0.001814
+[2022.05.06-12.18.09:837][656]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001662
+[2022.05.06-12.18.09:837][656]LogTemp: Warning: VAL AT INTERRECOIL: 0.001662
+[2022.05.06-12.18.09:846][657]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: 0.001515
+[2022.05.06-12.18.09:846][657]LogTemp: Warning: VAL AT INTERRECOIL: 0.001515
+[2022.05.06-12.18.09:855][658]LogTemp: Warning: VAL: -2.365654
+[2022.05.06-12.18.09:855][658]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -2.168026
+[2022.05.06-12.18.09:855][658]LogTemp: Warning: VAL AT INTERRECOIL: -2.168026
+[2022.05.06-12.18.09:863][659]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.974774
+[2022.05.06-12.18.09:864][659]LogTemp: Warning: VAL AT INTERRECOIL: -1.974774
+[2022.05.06-12.18.09:871][660]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.810152
+[2022.05.06-12.18.09:871][660]LogTemp: Warning: VAL AT INTERRECOIL: -1.810152
+[2022.05.06-12.18.09:880][661]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.659257
+[2022.05.06-12.18.09:880][661]LogTemp: Warning: VAL AT INTERRECOIL: -1.659257
+[2022.05.06-12.18.09:888][662]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.520945
+[2022.05.06-12.18.09:888][662]LogTemp: Warning: VAL AT INTERRECOIL: -1.520945
+[2022.05.06-12.18.09:896][663]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.394165
+[2022.05.06-12.18.09:896][663]LogTemp: Warning: VAL AT INTERRECOIL: -1.394165
+[2022.05.06-12.18.09:905][664]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.266446
+[2022.05.06-12.18.09:906][664]LogTemp: Warning: VAL AT INTERRECOIL: -1.266446
+[2022.05.06-12.18.09:914][665]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.160888
+[2022.05.06-12.18.09:914][665]LogTemp: Warning: VAL AT INTERRECOIL: -1.160888
+[2022.05.06-12.18.09:922][666]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.064128
+[2022.05.06-12.18.09:922][666]LogTemp: Warning: VAL AT INTERRECOIL: -1.064128
+[2022.05.06-12.18.09:932][667]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.968174
+[2022.05.06-12.18.09:932][667]LogTemp: Warning: VAL AT INTERRECOIL: -0.968174
+[2022.05.06-12.18.09:941][668]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.882132
+[2022.05.06-12.18.09:942][668]LogTemp: Warning: VAL AT INTERRECOIL: -0.882132
+[2022.05.06-12.18.09:949][669]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.803898
+[2022.05.06-12.18.09:949][669]LogTemp: Warning: VAL AT INTERRECOIL: -0.803898
+[2022.05.06-12.18.09:957][670]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.736897
+[2022.05.06-12.18.09:958][670]LogTemp: Warning: VAL AT INTERRECOIL: -0.736897
+[2022.05.06-12.18.09:965][671]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.675481
+[2022.05.06-12.18.09:965][671]LogTemp: Warning: VAL AT INTERRECOIL: -0.675481
+[2022.05.06-12.18.09:973][672]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.619184
+[2022.05.06-12.18.09:973][672]LogTemp: Warning: VAL AT INTERRECOIL: -0.619184
+[2022.05.06-12.18.09:981][673]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.567581
+[2022.05.06-12.18.09:982][673]LogTemp: Warning: VAL AT INTERRECOIL: -0.567581
+[2022.05.06-12.18.09:990][674]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.520275
+[2022.05.06-12.18.09:990][674]LogTemp: Warning: VAL AT INTERRECOIL: -0.520275
+[2022.05.06-12.18.09:998][675]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.476915
+[2022.05.06-12.18.09:998][675]LogTemp: Warning: VAL AT INTERRECOIL: -0.476915
+[2022.05.06-12.18.10:006][676]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.437168
+[2022.05.06-12.18.10:007][676]LogTemp: Warning: VAL AT INTERRECOIL: -0.437168
+[2022.05.06-12.18.10:015][677]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.400734
+[2022.05.06-12.18.10:015][677]LogTemp: Warning: VAL AT INTERRECOIL: -0.400734
+[2022.05.06-12.18.10:023][678]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.367337
+[2022.05.06-12.18.10:024][678]LogTemp: Warning: VAL AT INTERRECOIL: -0.367337
+[2022.05.06-12.18.10:032][679]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.336724
+[2022.05.06-12.18.10:032][679]LogTemp: Warning: VAL AT INTERRECOIL: -0.336724
+[2022.05.06-12.18.10:041][680]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.308662
+[2022.05.06-12.18.10:041][680]LogTemp: Warning: VAL AT INTERRECOIL: -0.308662
+[2022.05.06-12.18.10:049][681]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.282939
+[2022.05.06-12.18.10:049][681]LogTemp: Warning: VAL AT INTERRECOIL: -0.282939
+[2022.05.06-12.18.10:058][682]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.259359
+[2022.05.06-12.18.10:058][682]LogTemp: Warning: VAL AT INTERRECOIL: -0.259359
+[2022.05.06-12.18.10:066][683]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.237745
+[2022.05.06-12.18.10:066][683]LogTemp: Warning: VAL AT INTERRECOIL: -0.237745
+[2022.05.06-12.18.10:075][684]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.217880
+[2022.05.06-12.18.10:075][684]LogTemp: Warning: VAL AT INTERRECOIL: -0.217880
+[2022.05.06-12.18.10:082][685]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.199635
+[2022.05.06-12.18.10:083][685]LogTemp: Warning: VAL AT INTERRECOIL: -0.199635
+[2022.05.06-12.18.10:090][686]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.182998
+[2022.05.06-12.18.10:091][686]LogTemp: Warning: VAL AT INTERRECOIL: -0.182998
+[2022.05.06-12.18.10:098][687]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.167747
+[2022.05.06-12.18.10:099][687]LogTemp: Warning: VAL AT INTERRECOIL: -0.167747
+[2022.05.06-12.18.10:107][688]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.153667
+[2022.05.06-12.18.10:107][688]LogTemp: Warning: VAL AT INTERRECOIL: -0.153667
+[2022.05.06-12.18.10:115][689]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.140861
+[2022.05.06-12.18.10:115][689]LogTemp: Warning: VAL AT INTERRECOIL: -0.140861
+[2022.05.06-12.18.10:125][690]LogTemp: Warning: VAL: -1.957719
+[2022.05.06-12.18.10:125][690]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.792044
+[2022.05.06-12.18.10:125][690]LogTemp: Warning: VAL AT INTERRECOIL: -1.792044
+[2022.05.06-12.18.10:133][691]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.616155
+[2022.05.06-12.18.10:134][691]LogTemp: Warning: VAL AT INTERRECOIL: -1.616155
+[2022.05.06-12.18.10:142][692]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.479715
+[2022.05.06-12.18.10:142][692]LogTemp: Warning: VAL AT INTERRECOIL: -1.479715
+[2022.05.06-12.18.10:150][693]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.354917
+[2022.05.06-12.18.10:150][693]LogTemp: Warning: VAL AT INTERRECOIL: -1.354917
+[2022.05.06-12.18.10:159][694]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.240752
+[2022.05.06-12.18.10:159][694]LogTemp: Warning: VAL AT INTERRECOIL: -1.240752
+[2022.05.06-12.18.10:167][695]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.136297
+[2022.05.06-12.18.10:167][695]LogTemp: Warning: VAL AT INTERRECOIL: -1.136297
+[2022.05.06-12.18.10:176][696]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -1.040711
+[2022.05.06-12.18.10:176][696]LogTemp: Warning: VAL AT INTERRECOIL: -1.040711
+[2022.05.06-12.18.10:184][697]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.953232
+[2022.05.06-12.18.10:184][697]LogTemp: Warning: VAL AT INTERRECOIL: -0.953232
+[2022.05.06-12.18.10:191][698]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.873159
+[2022.05.06-12.18.10:191][698]LogTemp: Warning: VAL AT INTERRECOIL: -0.873159
+[2022.05.06-12.18.10:200][699]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.799861
+[2022.05.06-12.18.10:200][699]LogTemp: Warning: VAL AT INTERRECOIL: -0.799861
+[2022.05.06-12.18.10:209][700]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.732753
+[2022.05.06-12.18.10:209][700]LogTemp: Warning: VAL AT INTERRECOIL: -0.732753
+[2022.05.06-12.18.10:217][701]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.671310
+[2022.05.06-12.18.10:217][701]LogTemp: Warning: VAL AT INTERRECOIL: -0.671310
+[2022.05.06-12.18.10:225][702]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.615046
+[2022.05.06-12.18.10:225][702]LogTemp: Warning: VAL AT INTERRECOIL: -0.615046
+[2022.05.06-12.18.10:233][703]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.563522
+[2022.05.06-12.18.10:233][703]LogTemp: Warning: VAL AT INTERRECOIL: -0.563522
+[2022.05.06-12.18.10:242][704]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.516334
+[2022.05.06-12.18.10:242][704]LogTemp: Warning: VAL AT INTERRECOIL: -0.516334
+[2022.05.06-12.18.10:250][705]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.473115
+[2022.05.06-12.18.10:251][705]LogTemp: Warning: VAL AT INTERRECOIL: -0.473115
+[2022.05.06-12.18.10:258][706]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.433527
+[2022.05.06-12.18.10:259][706]LogTemp: Warning: VAL AT INTERRECOIL: -0.433527
+[2022.05.06-12.18.10:267][707]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.397264
+[2022.05.06-12.18.10:267][707]LogTemp: Warning: VAL AT INTERRECOIL: -0.397264
+[2022.05.06-12.18.10:275][708]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.364045
+[2022.05.06-12.18.10:275][708]LogTemp: Warning: VAL AT INTERRECOIL: -0.364045
+[2022.05.06-12.18.10:283][709]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.333612
+[2022.05.06-12.18.10:284][709]LogTemp: Warning: VAL AT INTERRECOIL: -0.333612
+[2022.05.06-12.18.10:292][710]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.305730
+[2022.05.06-12.18.10:292][710]LogTemp: Warning: VAL AT INTERRECOIL: -0.305730
+[2022.05.06-12.18.10:300][711]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.280184
+[2022.05.06-12.18.10:300][711]LogTemp: Warning: VAL AT INTERRECOIL: -0.280184
+[2022.05.06-12.18.10:308][712]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.256775
+[2022.05.06-12.18.10:308][712]LogTemp: Warning: VAL AT INTERRECOIL: -0.256775
+[2022.05.06-12.18.10:316][713]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.235329
+[2022.05.06-12.18.10:316][713]LogTemp: Warning: VAL AT INTERRECOIL: -0.235329
+[2022.05.06-12.18.10:325][714]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.215678
+[2022.05.06-12.18.10:325][714]LogTemp: Warning: VAL AT INTERRECOIL: -0.215678
+[2022.05.06-12.18.10:335][715]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.192775
+[2022.05.06-12.18.10:336][715]LogTemp: Warning: VAL AT INTERRECOIL: -0.192775
+[2022.05.06-12.18.10:344][716]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.176683
+[2022.05.06-12.18.10:344][716]LogTemp: Warning: VAL AT INTERRECOIL: -0.176683
+[2022.05.06-12.18.10:352][717]LogTemp: Warning: VAL AT INTERPFINAL RECOIL: -0.161936
+[2022.05.06-12.18.10:353][717]LogTemp: Warning: VAL AT INTERRECOIL: -0.161936
+[2022.05.06-12.18.10:385][717]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.05.06-12.18.10:386][717]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2022.05.06-12.18.10:387][717]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2022.05.06-12.18.10:388][717]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.05.06-12.18.10:403][717]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2022.05.06-12.18.10:405][717]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2022.05.06-12.18.10:410][717]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2022.05.06-12.18.10:411][717]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.05.06-12.18.10:413][717]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2022.05.06-12.18.10:454][717]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2022.05.06-12.18.10:459][717]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2022.05.06-12.18.10:486][718]LogPlayLevel: Display: Destroying online subsystem :Context_6

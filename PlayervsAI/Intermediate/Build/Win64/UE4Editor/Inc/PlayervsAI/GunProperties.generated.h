@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class APlayerClass;
 struct FHitResult;
 struct FVector;
 struct FTimerHandle;
@@ -17,39 +18,37 @@ class UCameraComponent;
 #endif
 #define PLAYERVSAI_GunProperties_generated_h
 
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_28_GENERATED_BODY \
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_30_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FWeaponData_Statics; \
 	PLAYERVSAI_API static class UScriptStruct* StaticStruct();
 
 
 template<> PLAYERVSAI_API UScriptStruct* StaticStruct<struct FWeaponData>();
 
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_SPARSE_DATA
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_RPC_WRAPPERS \
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_SPARSE_DATA
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execProjectileShooting); \
 	DECLARE_FUNCTION(execProcessARHit); \
 	DECLARE_FUNCTION(execProcessInstantHit); \
 	DECLARE_FUNCTION(execWeaponTrace); \
-	DECLARE_FUNCTION(execInterpRecoil); \
-	DECLARE_FUNCTION(execInterpFinalRecoil); \
 	DECLARE_FUNCTION(execARShooting); \
 	DECLARE_FUNCTION(execInstantFire); \
 	DECLARE_FUNCTION(execFire);
 
 
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_RPC_WRAPPERS_NO_PURE_DECLS \
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execProjectileShooting); \
 	DECLARE_FUNCTION(execProcessARHit); \
 	DECLARE_FUNCTION(execProcessInstantHit); \
 	DECLARE_FUNCTION(execWeaponTrace); \
-	DECLARE_FUNCTION(execInterpRecoil); \
-	DECLARE_FUNCTION(execInterpFinalRecoil); \
 	DECLARE_FUNCTION(execARShooting); \
 	DECLARE_FUNCTION(execInstantFire); \
 	DECLARE_FUNCTION(execFire);
 
 
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_INCLASS_NO_PURE_DECLS \
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGunProperties(); \
 	friend struct Z_Construct_UClass_AGunProperties_Statics; \
@@ -58,7 +57,7 @@ public: \
 	DECLARE_SERIALIZER(AGunProperties)
 
 
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_INCLASS \
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_INCLASS \
 private: \
 	static void StaticRegisterNativesAGunProperties(); \
 	friend struct Z_Construct_UClass_AGunProperties_Statics; \
@@ -67,7 +66,7 @@ public: \
 	DECLARE_SERIALIZER(AGunProperties)
 
 
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_STANDARD_CONSTRUCTORS \
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AGunProperties(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AGunProperties) \
@@ -80,7 +79,7 @@ private: \
 public:
 
 
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_ENHANCED_CONSTRUCTORS \
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AGunProperties(AGunProperties&&); \
@@ -91,28 +90,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AGunProperties); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AGunProperties)
 
 
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_PRIVATE_PROPERTY_OFFSET
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_PROLOG
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_GENERATED_BODY_LEGACY \
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ProjectileClass() { return STRUCT_OFFSET(AGunProperties, ProjectileClass); }
+
+
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_44_PROLOG
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_PRIVATE_PROPERTY_OFFSET \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_SPARSE_DATA \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_RPC_WRAPPERS \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_INCLASS \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_STANDARD_CONSTRUCTORS \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_PRIVATE_PROPERTY_OFFSET \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_SPARSE_DATA \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_RPC_WRAPPERS \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_INCLASS \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define PlayervsAI_Source_PlayervsAI_GunProperties_h_50_GENERATED_BODY \
+#define PlayervsAI_Source_PlayervsAI_GunProperties_h_47_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_PRIVATE_PROPERTY_OFFSET \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_SPARSE_DATA \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_RPC_WRAPPERS_NO_PURE_DECLS \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_INCLASS_NO_PURE_DECLS \
-	PlayervsAI_Source_PlayervsAI_GunProperties_h_50_ENHANCED_CONSTRUCTORS \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_PRIVATE_PROPERTY_OFFSET \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_SPARSE_DATA \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_RPC_WRAPPERS_NO_PURE_DECLS \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_INCLASS_NO_PURE_DECLS \
+	PlayervsAI_Source_PlayervsAI_GunProperties_h_47_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

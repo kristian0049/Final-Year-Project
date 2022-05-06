@@ -32,8 +32,19 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "PlayerAnimations")
 		FTransform SightTransform;
 
+	UPROPERTY(BlueprintReadOnly, Category = "PlayerAnimations")
+		FTransform LeftHandTransform;
+
+	UPROPERTY(BlueprintReadOnly, Category = "PlayerAnimations")
+		FTransform RecoilTransform;
+	FTransform FinalRecoilTransform;
+
+	UFUNCTION()
+	void Fire();
 protected:
 	void SetSightTransform();
 	void SetRelativeHandTransform();
-	
+	void InterpFinalRecoil(float DeltaSeconds);
+	void InterpRecoil(float DeltaSeconds);
+	void SetLeftHandTransform();
 };

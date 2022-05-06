@@ -3,28 +3,32 @@
 
 #include "GunProperties.h"
 #include "Engine.h"
+#include "PlayerClass.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Enemy.h"
+#include "PlayervsAIProjectile.h"
+
 AGunProperties::AGunProperties() 
 {
 	PrimaryActorTick.bCanEverTick = true;
 	CollisionComp = CreateDefaultSubobject<UBoxComponent>(TEXT("CollisionComp"));
 	RootComponent = CollisionComp;
-
+	GunOffset = FVector(100.0f, 0.0f, 10.0f);
 	WeaponMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun Mesh"));
 	WeaponMesh->AttachTo(RootComponent);
 }
 
 
-void AGunProperties::Fire(FVector GetFwrCam, UCameraComponent* PlayerCam, FTimerHandle _ShootingHandler)
+void AGunProperties::Fire(FVector GetFwrCam, UCameraComponent* PlayerCam, FTimerHandle _ShootingHandler, APlayerClass* Player)
 {
-	if (ProjectileType == EWeaponProjectile::EBullet)
+	if (ProjectileType == EWeaponProjectile::EBullet && !IsHidden()  )
 	{
 		//GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, TEXT("Bullet"))
 		
-		ARShooting(GetFwrCam,_ShootingHandler);
+		ARShooting(GetFwrCam,_ShootingHandler,Player);
 		
 	}
-	if (ProjectileType == EWeaponProjectile::ESpread)
+	if (ProjectileType == EWeaponProjectile::ESpread && !IsHidden() )
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, TEXT("Spread"));
 		for (int32 i = 0; i <= WeaponConfig.WeaponSpread; i++)
@@ -32,9 +36,9 @@ void AGunProperties::Fire(FVector GetFwrCam, UCameraComponent* PlayerCam, FTimer
 			InstantFire(GetFwrCam);
 		}
 	}
-	if (ProjectileType == EWeaponProjectile::EProjectile)
+	if (ProjectileType == EWeaponProjectile::EProjectile && !IsHidden())
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 2.0f, FColor::Black, TEXT("Projectile"));
+		ProjectileShooting( Player);
 	}
 }
 
@@ -45,20 +49,24 @@ void AGunProperties::InstantFire(FVector GetFwrCam)
 	const float CurrentSpread = WeaponConfig.WeaponSpread;
 	const float SpreadCone = FMath::DegreesToRadians(WeaponConfig.WeaponSpread *0.5 );
 	const FVector StartTrace = WeaponMesh->GetSocketLocation("MF");
-	const FVector ShootDir = WeaponRandomStream.VRandCone(StartTrace, SpreadCone, SpreadCone);
-	const FVector CameraDir = FVector(GetFwrCam.X,GetFwrCam.Y,GetFwrCam.Z-0.025) ;
-	const FVector EndTrace = StartTrace + ShootDir + CameraDir  * WeaponConfig.WeaponRange;
+	const FVector CameraDir = FVector(GetFwrCam.X, GetFwrCam.Y, GetFwrCam.Z);
+	const FVector ShootDir = WeaponRandomStream.VRandCone(CameraDir, SpreadCone, SpreadCone);
+	const FVector EndTrace = StartTrace + ShootDir    * WeaponConfig.WeaponRange;
 	const FHitResult Impact = WeaponTrace(StartTrace, EndTrace);
 
 	ProcessInstantHit(Impact, StartTrace, ShootDir, RandomSeed, CurrentSpread);
 }
 
-void AGunProperties::ARShooting(FVector GetFwrdCam, FTimerHandle _ShootingHandler)
+
+void AGunProperties::ARShooting(FVector GetFwrdCam, FTimerHandle _ShootingHandler, APlayerClass* Player)
 {
-	FRotator RecoilRot = FinalRecoilTransform.GetRotation().Rotator();
-	RecoilRot += FRotator(0.0f, 0.0f, -10.0f);
+	const FRotator StartTrace = Player->GetControlRotation();
 	
-	FinalRecoilTransform.SetRotation(RecoilRot.Quaternion());
+	const FVector SpawnLocation = WeaponMesh->GetSocketLocation(FName("MF"));
+	const FVector EndTrace = SpawnLocation + StartTrace.Vector()  * WeaponConfig.WeaponRange;
+	const FHitResult Impact = WeaponTrace(SpawnLocation, EndTrace);
+	ProcessARHit(Impact, SpawnLocation);
+	
 	
 }
 
@@ -82,6 +90,11 @@ void AGunProperties::ProcessInstantHit(const FHitResult& Impact, const FVector& 
 {
 	const FVector EndTrace = Origin + ShootDir * WeaponConfig.WeaponRange;
 	const FVector EndPoint = Impact.GetActor() ? Impact.ImpactPoint : EndTrace;
+	AEnemy* Enemy = Cast<AEnemy>(Impact.GetActor());
+	if (Enemy)
+	{
+		Enemy->DealDamage(WeaponConfig.DamageValue);
+	}
 	DrawDebugLine(this->GetWorld(), Origin, Impact.TraceEnd, FColor::Black, true, 1000, 10.f);
 }
 
@@ -89,23 +102,35 @@ void AGunProperties::ProcessARHit(const FHitResult& Impact, const FVector& Origi
 {
 	const FVector EndTrace = Origin * WeaponConfig.WeaponRange;
 	const FVector EndPoint = Impact.GetActor() ? Impact.ImpactPoint : EndTrace;
+	AEnemy* Enemy = Cast<AEnemy>(Impact.GetActor());
+	if (Enemy)
+	{
+		Enemy->DealDamage(WeaponConfig.DamageValue);
+
+	}
 	DrawDebugLine(this->GetWorld(), Origin, Impact.TraceEnd, FColor::Black, true, 1000, 10.f);
 }
 
 
-void AGunProperties::InterpFinalRecoil(float DeltaSeconds) 
+void AGunProperties::ProjectileShooting(APlayerClass* Player)
 {
-	//Interp To Zero
-	if (ProjectileType == EWeaponProjectile::EBullet)
+	if (ProjectileClass != nullptr)
 	{
-		FinalRecoilTransform = UKismetMathLibrary::TInterpTo(RecoilTransform, FinalRecoilTransform, DeltaSeconds, 10.0f);
-	}
-}
+		UWorld* const World = GetWorld();
+		if (World != nullptr)
+		{
+			
+				const FRotator SpawnRotation = Player->GetControlRotation();
+				// MuzzleOffset is in camera space, so transform it to world space before offsetting from the character location to find the final muzzle position
+				const FVector SpawnLocation = WeaponMesh->GetSocketLocation(FName("MF"));
 
-void AGunProperties::InterpRecoil(float DeltaSeconds)
-{
-	if (ProjectileType == EWeaponProjectile::EBullet)
-	{
+				//Set Spawn Collision Handling Override
+				FActorSpawnParameters ActorSpawnParams;
+				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
 
+				// spawn the projectile at the muzzle
+				World->SpawnActor<APlayervsAIProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+			
+		}
 	}
 }
